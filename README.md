@@ -4,13 +4,11 @@ Multiple Representation DeepInsight package
 A step-by-step guide to run MRep-DeepInsight codes.
 Language: MATLAB
 
-MRep-DeepInsight is built upon the previous package `DeepInsight3D`. Therefore, all preceding packages be executed using `MRep-DeepInsight` package, which includes [DeepInsight](https://github.com/alok-ai-lab/DeepInsight), [DeepFeature](https://github.com/alok-ai-lab/deepfeature) and [DeepInsight3D](https://github.com/alok-ai-lab/DeepInsight3D_pkg).
+MRep-DeepInsight is built upon the previous package [DeepInsight3D](https://github.com/alok-ai-lab/DeepInsight3D_pkg). Therefore, all preceding packages be executed using `MRep-DeepInsight` package, which includes [DeepInsight](https://github.com/alok-ai-lab/DeepInsight), [DeepFeature](https://github.com/alok-ai-lab/deepfeature) and [DeepInsight3D](https://github.com/alok-ai-lab/DeepInsight3D_pkg).
 
 Setting up the `Parameters.m` file enables one to run the package in various ways including all the previously developed packages.
 
-DeepInsight3D package to deal with multi-omics or multi-layered data
-
-DeepInsight3D has 3 main components. 1) conversion of multi-layered non-image samples (such as multi-omics or similar tabular data) into colored image-forms (i.e. 3D image samples). 2) processing colored images to convolutional neural network (CNN). 3) Element selection via CNN, such as using class-activation maps (CAMs). 
+MRep-DeepInsight3D package has 2 main components. 1) conversion of tabular data to image samples, and 2) processing images to the convolutional neural network (CNN). 
 
 This approach builds a 3D-image by arranging similar elements (or genes) together and dissimilar apart, and then by mapping the multi-layered non-image values on to these aligned pixel locations. This approach employs CNN for element or gene selection on non-image data. 
 
