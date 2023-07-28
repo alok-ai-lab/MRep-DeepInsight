@@ -1,0 +1,1948 @@
+
+Norm-2 valError 0.4948
+
+DeepInsight valErr: 0.4948
+
+Norm-2 valError 0.4732
+
+DeepInsight valErr: 0.4732
+
+Norm-2 valError 0.2272
+
+DeepInsight valErr: 0.2272
+
+Norm-2 valError 0.4282
+
+DeepInsight valErr: 0.4282
+
+Norm-2 valError 0.5039
+
+DeepInsight valErr: 0.5039
+
+Norm-2 valError 0.3818
+
+DeepInsight valErr: 0.3818
+
+Norm-2 valError 0.6154
+
+DeepInsight valErr: 0.6154
+
+Norm-2 valError 0.2796
+
+DeepInsight valErr: 0.2796
+
+Norm-2 valError 0.3262
+
+DeepInsight valErr: 0.3262
+
+Norm-2 valError 0.2796
+
+DeepInsight valErr: 0.2796
+
+Norm-2 valError 0.2473
+
+DeepInsight valErr: 0.2473
+
+Norm-2 valError 0.2581
+
+DeepInsight valErr: 0.2581
+
+Norm-2 valError 0.3262
+
+DeepInsight valErr: 0.3262
+
+Norm-2 valError 0.2955
+
+DeepInsight valErr: 0.2955
+
+Norm-2 valError 0.4062
+
+DeepInsight valErr: 0.4062
+
+Norm-2 valError 0.4661
+
+DeepInsight valErr: 0.4661
+
+Norm-2 valError 0.1828
+
+DeepInsight valErr: 0.1828
+
+Norm-2 valError 0.1828
+
+DeepInsight valErr: 0.1828
+
+Norm-2 valError 0.0682
+
+DeepInsight valErr: 0.0682
+
+Norm-2 valError 0.2386
+
+DeepInsight valErr: 0.2386
+
+Norm-2 valError 0.3475
+
+DeepInsight valErr: 0.3475
+
+Norm-2 valError 0.1828
+
+DeepInsight valErr: 0.1828
+
+Norm-2 valError 0.1935
+
+DeepInsight valErr: 0.1935
+
+Norm-2 valError 0.2796
+
+DeepInsight valErr: 0.2796
+
+Norm-2 valError 0.3617
+
+DeepInsight valErr: 0.3617
+
+Norm-2 valError 0.3262
+
+DeepInsight valErr: 0.3262
+
+Norm-2 valError 0.3262
+
+DeepInsight valErr: 0.3262
+
+Norm-2 valError 0.4043
+
+DeepInsight valErr: 0.4043
+
+Norm-2 valError 0.3972
+
+DeepInsight valErr: 0.3972
+
+Norm-2 valError 0.3688
+
+DeepInsight valErr: 0.3688
+
+Norm-2 valError 0.4752
+
+DeepInsight valErr: 0.4752
+
+Norm-2 valError 0.3262
+
+DeepInsight valErr: 0.3262
+
+Norm-2 valError 0.4043
+
+DeepInsight valErr: 0.4043
+
+Norm-2 valError 0.3475
+
+DeepInsight valErr: 0.3475
+
+Norm-2 valError 0.3759
+
+DeepInsight valErr: 0.3759
+
+Norm-2 valError 0.3262
+
+DeepInsight valErr: 0.3262
+
+Norm-2 valError 0.3191
+
+DeepInsight valErr: 0.3191
+
+Norm-2 valError 0.3546
+
+DeepInsight valErr: 0.3546
+
+Norm-2 valError 0.3617
+
+DeepInsight valErr: 0.3617
+
+Norm-2 valError 0.4043
+
+DeepInsight valErr: 0.4043
+
+Norm-2 valError 0.3972
+
+DeepInsight valErr: 0.3972
+
+Norm-2 valError 0.4184
+
+DeepInsight valErr: 0.4184
+
+Norm-2 valError 0.2979
+
+DeepInsight valErr: 0.2979
+
+Norm-2 valError 0.4468
+
+DeepInsight valErr: 0.4468
+
+Norm-2 valError 0.3191
+
+DeepInsight valErr: 0.3191
+
+Norm-2 valError 0.3404
+
+DeepInsight valErr: 0.3404
+
+Norm-2 valError 0.3617
+
+DeepInsight valErr: 0.3617
+
+Norm-2 valError 0.3322
+
+DeepInsight valErr: 0.3322
+
+Norm-2 valError 0.5252
+
+DeepInsight valErr: 0.5252
+
+Norm-2 valError 0.3942
+
+DeepInsight valErr: 0.3942
+
+Norm-2 valError 0.0935
+
+DeepInsight valErr: 0.0935
+
+Norm-2 valError 0.1951
+
+DeepInsight valErr: 0.1951
+
+Norm-2 valError 0.1789
+
+DeepInsight valErr: 0.1789
+
+Norm-2 valError 0.1707
+
+DeepInsight valErr: 0.1707
+
+Norm-2 valError 0.1789
+
+DeepInsight valErr: 0.1789
+
+Norm-2 valError 0.3252
+
+DeepInsight valErr: 0.3252
+
+Norm-2 valError 0.3333
+
+DeepInsight valErr: 0.3333
+
+Norm-2 valError 0.1870
+
+DeepInsight valErr: 0.1870
+
+Norm-2 valError 0.3333
+
+DeepInsight valErr: 0.3333
+
+Norm-2 valError 0.3333
+
+DeepInsight valErr: 0.3333
+
+Norm-2 valError 0.1707
+
+DeepInsight valErr: 0.1707
+
+Norm-2 valError 0.1545
+
+DeepInsight valErr: 0.1545
+
+Norm-2 valError 0.3675
+
+DeepInsight valErr: 0.3675
+
+Norm-2 valError 0.3889
+
+DeepInsight valErr: 0.3889
+
+Norm-2 valError 0.3846
+
+DeepInsight valErr: 0.3846
+
+Norm-2 valError 0.4444
+
+DeepInsight valErr: 0.4444
+
+Norm-2 valError 0.5000
+
+DeepInsight valErr: 0.5000
+
+Norm-2 valError 0.3547
+
+DeepInsight valErr: 0.3547
+
+Norm-2 valError 0.2764
+
+DeepInsight valErr: 0.2764
+
+Norm-2 valError 0.1382
+
+DeepInsight valErr: 0.1382
+
+Norm-2 valError 0.2602
+
+DeepInsight valErr: 0.2602
+
+Norm-2 valError 0.1545
+
+DeepInsight valErr: 0.1545
+
+Norm-2 valError 0.1951
+
+DeepInsight valErr: 0.1951
+
+Norm-2 valError 0.1545
+
+DeepInsight valErr: 0.1545
+
+Norm-2 valError 0.1951
+
+DeepInsight valErr: 0.1951
+
+Norm-2 valError 0.2602
+
+DeepInsight valErr: 0.2602
+
+Norm-2 valError 0.2520
+
+DeepInsight valErr: 0.2520
+
+Norm-2 valError 0.2520
+
+DeepInsight valErr: 0.2520
+
+Norm-2 valError 0.1707
+
+DeepInsight valErr: 0.1707
+
+Norm-2 valError 0.4797
+
+DeepInsight valErr: 0.4797
+
+Norm-2 valError 0.4797
+
+DeepInsight valErr: 0.4797
+
+Norm-2 valError 0.4797
+
+DeepInsight valErr: 0.4797
+
+Norm-2 valError 0.5854
+
+DeepInsight valErr: 0.5854
+
+Norm-2 valError 0.4715
+
+DeepInsight valErr: 0.4715
+
+Norm-2 valError 0.4146
+
+DeepInsight valErr: 0.4146
+
+Norm-2 valError 0.1789
+
+DeepInsight valErr: 0.1789
+
+Norm-2 valError 0.1463
+
+DeepInsight valErr: 0.1463
+
+Norm-2 valError 0.2520
+
+DeepInsight valErr: 0.2520
+
+Norm-2 valError 0.2520
+
+DeepInsight valErr: 0.2520
+
+Norm-2 valError 0.2358
+
+DeepInsight valErr: 0.2358
+
+Norm-2 valError 0.1707
+
+DeepInsight valErr: 0.1707
+
+Norm-2 valError 0.2358
+
+DeepInsight valErr: 0.2358
+
+Norm-2 valError 0.2358
+
+DeepInsight valErr: 0.2358
+
+Norm-2 valError 0.1220
+
+DeepInsight valErr: 0.1220
+
+Norm-2 valError 0.2764
+
+DeepInsight valErr: 0.2764
+
+Norm-2 valError 0.2033
+
+DeepInsight valErr: 0.2033
+
+Norm-2 valError 0.1789
+
+DeepInsight valErr: 0.1789
+
+Norm-2 valError 0.1789
+
+DeepInsight valErr: 0.1789
+
+Norm-2 valError 0.3089
+
+DeepInsight valErr: 0.3089
+
+Norm-2 valError 0.1463
+
+DeepInsight valErr: 0.1463
+
+Norm-2 valError 0.2358
+
+DeepInsight valErr: 0.2358
+
+Norm-2 valError 0.2602
+
+DeepInsight valErr: 0.2602
+
+Norm-2 valError 0.0442
+
+DeepInsight valErr: 0.0442
+
+Norm-2 valError 0.2764
+
+DeepInsight valErr: 0.2764
+
+Norm-2 valError 0.2764
+
+DeepInsight valErr: 0.2764
+
+Norm-2 valError 0.2520
+
+DeepInsight valErr: 0.2520
+
+Norm-2 valError 0.3171
+
+DeepInsight valErr: 0.3171
+
+Norm-2 valError 0.3984
+
+DeepInsight valErr: 0.3984
+
+Norm-2 valError 0.4715
+
+DeepInsight valErr: 0.4715
+
+Norm-2 valError 0.3008
+
+DeepInsight valErr: 0.3008
+
+Norm-2 valError 0.1626
+
+DeepInsight valErr: 0.1626
+
+Norm-2 valError 0.2846
+
+DeepInsight valErr: 0.2846
+
+Norm-2 valError 0.4797
+
+DeepInsight valErr: 0.4797
+
+Norm-2 valError 0.3740
+
+DeepInsight valErr: 0.3740
+
+Norm-2 valError 0.1626
+
+DeepInsight valErr: 0.1626
+
+Norm-2 valError 0.1789
+
+DeepInsight valErr: 0.1789
+
+Norm-2 valError 0.3902
+
+DeepInsight valErr: 0.3902
+
+Norm-2 valError 0.3089
+
+DeepInsight valErr: 0.3089
+
+Norm-2 valError 0.1545
+
+DeepInsight valErr: 0.1545
+
+Norm-2 valError 0.2439
+
+DeepInsight valErr: 0.2439
+
+Norm-2 valError 0.2358
+
+DeepInsight valErr: 0.2358
+
+Norm-2 valError 0.2033
+
+DeepInsight valErr: 0.2033
+
+Norm-2 valError 0.2358
+
+DeepInsight valErr: 0.2358
+
+Norm-2 valError 0.2358
+
+DeepInsight valErr: 0.2358
+
+Norm-2 valError 0.2602
+
+DeepInsight valErr: 0.2602
+
+Norm-2 valError 0.3659
+
+DeepInsight valErr: 0.3659
+
+Norm-2 valError 0.3171
+
+DeepInsight valErr: 0.3171
+
+Norm-2 valError 0.2520
+
+DeepInsight valErr: 0.2520
+
+Norm-2 valError 0.1382
+
+DeepInsight valErr: 0.1382
+
+Norm-2 valError 0.2927
+
+DeepInsight valErr: 0.2927
+
+Norm-2 valError 0.2683
+
+DeepInsight valErr: 0.2683
+
+Norm-2 valError 0.1707
+
+DeepInsight valErr: 0.1707
+
+Norm-2 valError 0.1138
+
+DeepInsight valErr: 0.1138
+
+Norm-2 valError 0.2439
+
+DeepInsight valErr: 0.2439
+
+Norm-2 valError 0.3984
+
+DeepInsight valErr: 0.3984
+
+Norm-2 valError 0.3415
+
+DeepInsight valErr: 0.3415
+
+Norm-2 valError 0.1789
+
+DeepInsight valErr: 0.1789
+
+Norm-2 valError 0.1626
+
+DeepInsight valErr: 0.1626
+
+Norm-2 valError 0.0032
+
+DeepInsight valErr: 0.0032
+
+Norm-2 valError 0.0000
+
+DeepInsight valErr: 0.0000
+
+Norm-2 valError 0.0005
+
+DeepInsight valErr: 0.0005
+
+Norm-2 valError 0.3577
+
+DeepInsight valErr: 0.3577
+
+Norm-2 valError 0.3089
+
+DeepInsight valErr: 0.3089
+
+Norm-2 valError 0.2602
+
+DeepInsight valErr: 0.2602
+
+Norm-2 valError 0.2846
+
+DeepInsight valErr: 0.2846
+
+Norm-2 valError 0.2358
+
+DeepInsight valErr: 0.2358
+
+Norm-2 valError 0.3089
+
+DeepInsight valErr: 0.3089
+
+Norm-2 valError 0.3089
+
+DeepInsight valErr: 0.3089
+
+Norm-2 valError 0.0397
+
+DeepInsight valErr: 0.0397
+
+Norm-2 valError 0.0571
+
+DeepInsight valErr: 0.0571
+
+Norm-2 valError 0.2365
+
+DeepInsight valErr: 0.2365
+
+Norm-2 valError 0.2874
+
+DeepInsight valErr: 0.2874
+
+Norm-2 valError 100.0000
+
+DeepInsight valErr: 100.0000
+
+No validation is used
+
+DeepInsight valErr: 100.0000
+
+No validation is used
+
+DeepInsight valErr: 100.0000
+
+Norm-2 valError 0.1092
+
+DeepInsight valErr: 0.1092
+
+Norm-2 valError 0.1077
+
+DeepInsight valErr: 0.1077
+
+Norm-2 valError 0.3248
+
+DeepInsight valErr: 0.3248
+
+Norm-2 valError 0.3504
+
+DeepInsight valErr: 0.3504
+
+Norm-2 valError 0.3205
+
+DeepInsight valErr: 0.3205
+
+Norm-2 valError 0.2888
+
+DeepInsight valErr: 0.2888
+
+Norm-2 valError 0.5303
+
+DeepInsight valErr: 0.5303
+
+Norm-2 valError 0.2256
+
+DeepInsight valErr: 0.2256
+
+Norm-2 valError 0.2388
+
+DeepInsight valErr: 0.2388
+
+Norm-2 valError 0.1016
+
+DeepInsight valErr: 0.1016
+
+Norm-2 valError 0.1036
+
+DeepInsight valErr: 0.1036
+
+Norm-2 valError 0.0937
+
+DeepInsight valErr: 0.0937
+
+Norm-2 valError 0.1075
+
+DeepInsight valErr: 0.1075
+
+Norm-2 valError 0.5501
+
+DeepInsight valErr: 0.5501
+
+Norm-2 valError 0.2025
+
+DeepInsight valErr: 0.2025
+
+Norm-2 valError 0.0989
+
+DeepInsight valErr: 0.0989
+
+Norm-2 valError 0.1234
+
+DeepInsight valErr: 0.1234
+
+Norm-2 valError 0.5442
+
+DeepInsight valErr: 0.5442
+
+Norm-2 valError 0.2487
+
+DeepInsight valErr: 0.2487
+
+Norm-2 valError 0.0930
+
+DeepInsight valErr: 0.0930
+
+Norm-2 valError 0.1049
+
+DeepInsight valErr: 0.1049
+
+Norm-2 valError 0.1062
+
+DeepInsight valErr: 0.1062
+
+Norm-2 valError 0.1220
+
+DeepInsight valErr: 0.1220
+
+Norm-2 valError 0.3262
+
+DeepInsight valErr: 0.3262
+
+Norm-2 valError 0.4184
+
+DeepInsight valErr: 0.4184
+
+Norm-2 valError 0.3688
+
+DeepInsight valErr: 0.3688
+
+Norm-2 valError 0.3759
+
+DeepInsight valErr: 0.3759
+
+Norm-2 valError 0.5125
+
+DeepInsight valErr: 0.5125
+
+Norm-2 valError 0.0904
+
+DeepInsight valErr: 0.0904
+
+Norm-2 valError 0.1148
+
+DeepInsight valErr: 0.1148
+
+Norm-2 valError 0.1141
+
+DeepInsight valErr: 0.1141
+
+Norm-2 valError 0.1247
+
+DeepInsight valErr: 0.1247
+
+Norm-2 valError 0.1299
+
+DeepInsight valErr: 0.1299
+
+Norm-2 valError 0.6398
+
+DeepInsight valErr: 0.6398
+
+Norm-2 valError 0.1854
+
+DeepInsight valErr: 0.1854
+
+Norm-2 valError 0.2230
+
+DeepInsight valErr: 0.2230
+
+Norm-2 valError 0.2190
+
+DeepInsight valErr: 0.2190
+
+Norm-2 valError 0.2263
+
+DeepInsight valErr: 0.2263
+
+Norm-2 valError 0.1143
+
+DeepInsight valErr: 0.1143
+
+Norm-2 valError 0.0143
+
+DeepInsight valErr: 0.0143
+
+Norm-2 valError 0.0143
+
+DeepInsight valErr: 0.0143
+
+Norm-2 valError 0.0127
+
+DeepInsight valErr: 0.0127
+
+Norm-2 valError 0.0206
+
+DeepInsight valErr: 0.0206
+
+No validation is used
+
+DeepInsight valErr: 100.0000
+
+Norm-2 valError 0.0785
+
+DeepInsight valErr: 0.0785
+
+Norm-2 valError 0.0877
+
+DeepInsight valErr: 0.0877
+
+Norm-2 valError 0.0818
+
+DeepInsight valErr: 0.0818
+
+Norm-2 valError 0.1346
+
+DeepInsight valErr: 0.1346
+
+Norm-2 valError 0.0627
+
+DeepInsight valErr: 0.0627
+
+Norm-2 valError 0.0884
+
+DeepInsight valErr: 0.0884
+
+Norm-2 valError 0.3475
+
+DeepInsight valErr: 0.3475
+
+Norm-2 valError 0.7606
+
+DeepInsight valErr: 0.7606
+
+Norm-2 valError 0.4604
+
+DeepInsight valErr: 0.4604
+
+Norm-2 valError 0.1022
+
+DeepInsight valErr: 0.1022
+
+Norm-2 valError 0.0792
+
+DeepInsight valErr: 0.0792
+
+Norm-2 valError 0.4301
+
+DeepInsight valErr: 0.4301
+
+Norm-2 valError 0.1326
+
+DeepInsight valErr: 0.1326
+
+Norm-2 valError 0.1319
+
+DeepInsight valErr: 0.1319
+
+Norm-2 valError 0.0798
+
+DeepInsight valErr: 0.0798
+
+Norm-2 valError 0.1128
+
+DeepInsight valErr: 0.1128
+
+Norm-2 valError 0.0891
+
+DeepInsight valErr: 0.0891
+
+Norm-2 valError 0.1075
+
+DeepInsight valErr: 0.1075
+
+Norm-2 valError 0.0818
+
+DeepInsight valErr: 0.0818
+
+Norm-2 valError 0.1102
+
+DeepInsight valErr: 0.1102
+
+Norm-2 valError 0.1069
+
+DeepInsight valErr: 0.1069
+
+Norm-2 valError 0.2678
+
+DeepInsight valErr: 0.2678
+
+Norm-2 valError 0.2117
+
+DeepInsight valErr: 0.2117
+
+Norm-2 valError 0.1788
+
+DeepInsight valErr: 0.1788
+
+Norm-2 valError 0.1108
+
+DeepInsight valErr: 0.1108
+
+Norm-2 valError 0.1623
+
+DeepInsight valErr: 0.1623
+
+Norm-2 valError 0.1603
+
+DeepInsight valErr: 0.1603
+
+Norm-2 valError 0.0042
+
+DeepInsight valErr: 0.0042
+
+Norm-2 valError 0.0042
+
+DeepInsight valErr: 0.0042
+
+Norm-2 valError 0.0323
+
+DeepInsight valErr: 0.0323
+
+Norm-2 valError 0.0124
+
+DeepInsight valErr: 0.0124
+
+Norm-2 valError 0.3728
+
+DeepInsight valErr: 0.3728
+
+Norm-2 valError 0.4438
+
+DeepInsight valErr: 0.4438
+
+Norm-2 valError 0.4438
+
+DeepInsight valErr: 0.4438
+
+Norm-2 valError 0.3018
+
+DeepInsight valErr: 0.3018
+
+Norm-2 valError 0.4793
+
+DeepInsight valErr: 0.4793
+
+Norm-2 valError 0.3964
+
+DeepInsight valErr: 0.3964
+
+Norm-2 valError 0.4438
+
+DeepInsight valErr: 0.4438
+
+Norm-2 valError 0.3550
+
+DeepInsight valErr: 0.3550
+
+Norm-2 valError 0.4024
+
+DeepInsight valErr: 0.4024
+
+Norm-2 valError 0.3905
+
+DeepInsight valErr: 0.3905
+
+Norm-2 valError 0.5266
+
+DeepInsight valErr: 0.5266
+
+Norm-2 valError 0.3609
+
+DeepInsight valErr: 0.3609
+
+Norm-2 valError 0.4142
+
+DeepInsight valErr: 0.4142
+
+Norm-2 valError 0.3373
+
+DeepInsight valErr: 0.3373
+
+Norm-2 valError 0.4320
+
+DeepInsight valErr: 0.4320
+
+Norm-2 valError 0.3136
+
+DeepInsight valErr: 0.3136
+
+Norm-2 valError 0.3728
+
+DeepInsight valErr: 0.3728
+
+Norm-2 valError 0.3787
+
+DeepInsight valErr: 0.3787
+
+Norm-2 valError 0.3905
+
+DeepInsight valErr: 0.3905
+
+Norm-2 valError 0.3373
+
+DeepInsight valErr: 0.3373
+
+Norm-2 valError 0.3314
+
+DeepInsight valErr: 0.3314
+
+Norm-2 valError 0.3195
+
+DeepInsight valErr: 0.3195
+
+Norm-2 valError 0.3432
+
+DeepInsight valErr: 0.3432
+
+Norm-2 valError 0.1124
+
+DeepInsight valErr: 0.1124
+
+Norm-2 valError 0.1124
+
+DeepInsight valErr: 0.1124
+
+Norm-2 valError 0.1065
+
+DeepInsight valErr: 0.1065
+
+Norm-2 valError 0.1006
+
+DeepInsight valErr: 0.1006
+
+Norm-2 valError 0.0947
+
+DeepInsight valErr: 0.0947
+
+Norm-2 valError 0.1538
+
+DeepInsight valErr: 0.1538
+
+Norm-2 valError 0.0769
+
+DeepInsight valErr: 0.0769
+
+Norm-2 valError 0.0888
+
+DeepInsight valErr: 0.0888
+
+Norm-2 valError 0.1302
+
+DeepInsight valErr: 0.1302
+
+Norm-2 valError 0.1657
+
+DeepInsight valErr: 0.1657
+
+Norm-2 valError 0.0888
+
+DeepInsight valErr: 0.0888
+
+Norm-2 valError 0.1243
+
+DeepInsight valErr: 0.1243
+
+Norm-2 valError 0.3669
+
+DeepInsight valErr: 0.3669
+
+Norm-2 valError 0.2249
+
+DeepInsight valErr: 0.2249
+
+Norm-2 valError 0.2485
+
+DeepInsight valErr: 0.2485
+
+Norm-2 valError 0.2249
+
+DeepInsight valErr: 0.2249
+
+No validation is used
+
+DeepInsight valErr: 100.0000
+
+Norm-2 valError 0.2544
+
+DeepInsight valErr: 0.2544
+
+Norm-2 valError 0.1538
+
+DeepInsight valErr: 0.1538
+
+Norm-2 valError 0.1479
+
+DeepInsight valErr: 0.1479
+
+Norm-2 valError 0.1420
+
+DeepInsight valErr: 0.1420
+
+Norm-2 valError 0.2474
+
+DeepInsight valErr: 0.2474
+
+Norm-2 valError 0.1675
+
+DeepInsight valErr: 0.1675
+
+Norm-2 valError 0.2051
+
+DeepInsight valErr: 0.2051
+
+Norm-2 valError 0.1735
+
+DeepInsight valErr: 0.1735
+
+Norm-2 valError 0.1821
+
+DeepInsight valErr: 0.1821
+
+Norm-2 valError 0.2625
+
+DeepInsight valErr: 0.2625
+
+Norm-2 valError 0.2289
+
+DeepInsight valErr: 0.2289
+
+Norm-2 valError 0.2045
+
+DeepInsight valErr: 0.2045
+
+Norm-2 valError 0.3635
+
+DeepInsight valErr: 0.3635
+
+Norm-2 valError 0.2098
+
+DeepInsight valErr: 0.2098
+
+Norm-2 valError 0.2355
+
+DeepInsight valErr: 0.2355
+
+Norm-2 valError 0.0646
+
+DeepInsight valErr: 0.0646
+
+Norm-2 valError 0.0732
+
+DeepInsight valErr: 0.0732
+
+Norm-2 valError 0.0739
+
+DeepInsight valErr: 0.0739
+
+Norm-2 valError 0.0923
+
+DeepInsight valErr: 0.0923
+
+Norm-2 valError 0.1999
+
+DeepInsight valErr: 0.1999
+
+Norm-2 valError 0.0956
+
+DeepInsight valErr: 0.0956
+
+Norm-2 valError 0.1135
+
+DeepInsight valErr: 0.1135
+
+Norm-2 valError 0.1418
+
+DeepInsight valErr: 0.1418
+
+Norm-1 valError 0.1135
+
+DeepInsight valErr: 0.1135
+
+Norm-1 valError 0.1128
+
+DeepInsight valErr: 0.1128
+
+Norm-1 valError 0.0864
+
+DeepInsight valErr: 0.0864
+
+Norm-1 valError 0.0996
+
+DeepInsight valErr: 0.0996
+
+Norm-2 valError 0.1247
+
+DeepInsight valErr: 0.1247
+
+Norm-1 valError 0.1022
+
+DeepInsight valErr: 0.1022
+
+Norm-1 valError 0.1201
+
+DeepInsight valErr: 0.1201
+
+Norm-1 valError 0.1220
+
+DeepInsight valErr: 0.1220
+
+Norm-1 valError 0.0877
+
+DeepInsight valErr: 0.0877
+
+Norm-1 valError 0.0917
+
+DeepInsight valErr: 0.0917
+
+Norm-2 valError 0.5310
+
+DeepInsight valErr: 0.5310
+
+Norm-2 valError 0.0838
+
+DeepInsight valErr: 0.0838
+
+Norm-2 valError 0.1102
+
+DeepInsight valErr: 0.1102
+
+Norm-2 valError 0.0940
+
+DeepInsight valErr: 0.0940
+
+Norm-2 valError 0.0854
+
+DeepInsight valErr: 0.0854
+
+Norm-2 valError 0.0895
+
+DeepInsight valErr: 0.0895
+
+Norm-2 valError 0.0917
+
+DeepInsight valErr: 0.0917
+
+Norm-2 valError 0.1118
+
+DeepInsight valErr: 0.1118
+
+Norm-2 valError 0.1074
+
+DeepInsight valErr: 0.1074
+
+Norm-2 valError 0.1418
+
+DeepInsight valErr: 0.1418
+
+Norm-2 valError 0.1068
+
+DeepInsight valErr: 0.1068
+
+Norm-2 valError 0.1007
+
+DeepInsight valErr: 0.1007
+
+Norm-2 valError 0.1130
+
+DeepInsight valErr: 0.1130
+
+Norm-2 valError 0.1035
+
+DeepInsight valErr: 0.1035
+
+Norm-2 valError 0.1258
+
+DeepInsight valErr: 0.1258
+
+Norm-2 valError 0.1418
+
+DeepInsight valErr: 0.1418
+
+Norm-2 valError 0.1062
+
+DeepInsight valErr: 0.1062
+
+Norm-2 valError 0.1303
+
+DeepInsight valErr: 0.1303
+
+Norm-2 valError 0.1290
+
+DeepInsight valErr: 0.1290
+
+Norm-2 valError 0.1463
+
+DeepInsight valErr: 0.1463
+
+Norm-2 valError 0.1271
+
+DeepInsight valErr: 0.1271
+
+Norm-2 valError 0.2000
+
+DeepInsight valErr: 0.2000
+
+Norm-2 valError 0.2750
+
+DeepInsight valErr: 0.2750
+
+Norm-2 valError 0.2000
+
+DeepInsight valErr: 0.2000
+
+Norm-2 valError 0.3000
+
+DeepInsight valErr: 0.3000
+
+Norm-2 valError 0.2870
+
+DeepInsight valErr: 0.2870
+
+Norm-2 valError 0.1997
+
+DeepInsight valErr: 0.1997
+
+Norm-2 valError 0.1588
+
+DeepInsight valErr: 0.1588
+
+Norm-2 valError 0.1716
+
+DeepInsight valErr: 0.1716
+
+Norm-2 valError 0.2337
+
+DeepInsight valErr: 0.2337
+
+Norm-2 valError 0.1598
+
+DeepInsight valErr: 0.1598
+
+Norm-2 valError 0.2249
+
+DeepInsight valErr: 0.2249
+
+Norm-2 valError 0.1124
+
+DeepInsight valErr: 0.1124
+
+Norm-2 valError 0.1479
+
+DeepInsight valErr: 0.1479
+
+Norm-2 valError 0.4274
+
+DeepInsight valErr: 0.4274
+
+Norm-2 valError 0.2286
+
+DeepInsight valErr: 0.2286
+
+Norm-2 valError 0.2115
+
+DeepInsight valErr: 0.2115
+
+Norm-2 valError 0.1875
+
+DeepInsight valErr: 0.1875
+
+Norm-2 valError 0.2344
+
+DeepInsight valErr: 0.2344
+
+Norm-2 valError 0.1992
+
+DeepInsight valErr: 0.1992
+
+Norm-2 valError 0.1810
+
+DeepInsight valErr: 0.1810
+
+Norm-1 valError 0.1825
+
+DeepInsight valErr: 0.1825
+
+Norm-1 valError 0.2051
+
+DeepInsight valErr: 0.2051
+
+Norm-2 valError 0.4807
+
+DeepInsight valErr: 0.4807
+
+Norm-2 valError 0.4862
+
+DeepInsight valErr: 0.4862
+
+Norm-2 valError 0.5905
+
+DeepInsight valErr: 0.5905
+
+Norm-2 valError 0.5976
+
+DeepInsight valErr: 0.5976
+
+Norm-2 valError 0.3562
+
+DeepInsight valErr: 0.3562
+
+Norm-2 valError 0.0976
+
+DeepInsight valErr: 0.0976
+
+Norm-2 valError 0.0986
+
+DeepInsight valErr: 0.0986
+
+Norm-2 valError 0.2290
+
+DeepInsight valErr: 0.2290
+
+Norm-2 valError 0.2126
+
+DeepInsight valErr: 0.2126
+
+Norm-2 valError 0.2436
+
+DeepInsight valErr: 0.2436
+
+Norm-2 valError 0.2521
+
+DeepInsight valErr: 0.2521
+
+Norm-2 valError 0.2396
+
+DeepInsight valErr: 0.2396
+
+Norm-2 valError 0.2860
+
+DeepInsight valErr: 0.2860
+
+Norm-2 valError 0.2465
+
+DeepInsight valErr: 0.2465
+
+Norm-2 valError 0.2673
+
+DeepInsight valErr: 0.2673
+
+Norm-2 valError 0.1657
+
+DeepInsight valErr: 0.1657
+
+Norm-2 valError 0.2071
+
+DeepInsight valErr: 0.2071
+
+Norm-2 valError 0.1065
+
+DeepInsight valErr: 0.1065
+
+Norm-2 valError 0.1716
+
+DeepInsight valErr: 0.1716
+
+Norm-2 valError 0.0888
+
+DeepInsight valErr: 0.0888
+
+Norm-2 valError 0.1361
+
+DeepInsight valErr: 0.1361
+
+Norm-2 valError 0.1302
+
+DeepInsight valErr: 0.1302
+
+Norm-2 valError 0.1982
+
+DeepInsight valErr: 0.1982
+
+Norm-2 valError 0.0669
+
+DeepInsight valErr: 0.0669
+
+Norm-2 valError 0.0689
+
+DeepInsight valErr: 0.0689
+
+Norm-2 valError 0.0893
+
+DeepInsight valErr: 0.0893
+
+Norm-2 valError 0.1003
+
+DeepInsight valErr: 0.1003
+
+Norm-2 valError 0.1082
+
+DeepInsight valErr: 0.1082
+
+Norm-2 valError 0.0975
+
+DeepInsight valErr: 0.0975
+
+Norm-2 valError 0.1123
+
+DeepInsight valErr: 0.1123
+
+Norm-2 valError 0.0816
+
+DeepInsight valErr: 0.0816
+
+Norm-2 valError 0.0822
+
+DeepInsight valErr: 0.0822
+
+Norm-2 valError 0.1080
+
+DeepInsight valErr: 0.1080
+
+Norm-2 valError 0.1209
+
+DeepInsight valErr: 0.1209
+
+Norm-2 valError 0.0976
+
+DeepInsight valErr: 0.0976
+
+Norm-2 valError 0.0921
+
+DeepInsight valErr: 0.0921
+
+Norm-2 valError 0.1007
+
+DeepInsight valErr: 0.1007
+
+Norm-2 valError 0.0959
+
+DeepInsight valErr: 0.0959
+
+Norm-2 valError 0.8705
+
+DeepInsight valErr: 0.8705
+
+Norm-2 valError 0.4951
+
+DeepInsight valErr: 0.4951
+
+Norm-2 valError 0.6524
+
+DeepInsight valErr: 0.6524
+
+No validation is used
+
+DeepInsight valErr: 100.0000
+
+No validation is used
+
+DeepInsight valErr: 100.0000
+
+Norm-2 valError 0.4804
+
+DeepInsight valErr: 0.4804
+
+Norm-2 valError 0.1105
+
+DeepInsight valErr: 0.1105
+
+Norm-2 valError 0.0963
+
+DeepInsight valErr: 0.0963
+
+Norm-2 valError 0.4241
+
+DeepInsight valErr: 0.4241
+
+Norm-2 valError 0.4316
+
+DeepInsight valErr: 0.4316
+
+Norm-2 valError 0.3583
+
+DeepInsight valErr: 0.3583
+
+Norm-2 valError 0.2315
+
+DeepInsight valErr: 0.2315
+
+Norm-2 valError 0.2557
+
+DeepInsight valErr: 0.2557
+
+Norm-2 valError 0.5759
+
+DeepInsight valErr: 0.5759
+
+Norm-2 valError 0.1313
+
+DeepInsight valErr: 0.1313
+
+Norm-2 valError 0.0950
+
+DeepInsight valErr: 0.0950
+
+Norm-2 valError 0.3632
+
+DeepInsight valErr: 0.3632
+
+Norm-2 valError 0.4231
+
+DeepInsight valErr: 0.4231
+
+Norm-2 valError 0.2650
+
+DeepInsight valErr: 0.2650
+
+Norm-2 valError 0.2906
+
+DeepInsight valErr: 0.2906
+
+Norm-2 valError 0.2436
+
+DeepInsight valErr: 0.2436
+
+Norm-2 valError 0.3034
+
+DeepInsight valErr: 0.3034
+
+Norm-2 valError 0.3276
+
+DeepInsight valErr: 0.3276
+
+Norm-2 valError 0.4217
+
+DeepInsight valErr: 0.4217
+
+Norm-2 valError 0.2521
+
+DeepInsight valErr: 0.2521
+
+Norm-2 valError 0.3248
+
+DeepInsight valErr: 0.3248
+
+Norm-2 valError 0.2051
+
+DeepInsight valErr: 0.2051
+
+Norm-2 valError 0.2479
+
+DeepInsight valErr: 0.2479
+
+Norm-2 valError 0.2265
+
+DeepInsight valErr: 0.2265
+
+Norm-2 valError 0.2479
+
+DeepInsight valErr: 0.2479
+
+Norm-2 valError 0.2479
+
+DeepInsight valErr: 0.2479
+
+Norm-2 valError 0.2863
+
+DeepInsight valErr: 0.2863
+
+Norm-2 valError 0.3675
+
+DeepInsight valErr: 0.3675
+
+Norm-2 valError 0.2863
+
+DeepInsight valErr: 0.2863
+
+Norm-2 valError 0.2350
+
+DeepInsight valErr: 0.2350
+
+Norm-2 valError 0.1788
+
+DeepInsight valErr: 0.1788
+
+Norm-2 valError 0.5455
+
+DeepInsight valErr: 0.5455
+
+Norm-2 valError 0.1181
+
+DeepInsight valErr: 0.1181
+
+Norm-2 valError 0.1880
+
+DeepInsight valErr: 0.1880
+
+Norm-2 valError 0.2137
+
+DeepInsight valErr: 0.2137
+
+Norm-2 valError 0.2393
+
+DeepInsight valErr: 0.2393
+
+Norm-2 valError 0.2137
+
+DeepInsight valErr: 0.2137
+
+Norm-2 valError 0.1966
+
+DeepInsight valErr: 0.1966
+
+Norm-2 valError 0.3134
+
+DeepInsight valErr: 0.3134
+
+Norm-2 valError 0.1854
+
+DeepInsight valErr: 0.1854
+
+Norm-2 valError 0.1003
+
+DeepInsight valErr: 0.1003
+
+Norm-2 valError 0.1022
+
+DeepInsight valErr: 0.1022
+
+Norm-2 valError 0.1082
+
+DeepInsight valErr: 0.1082
+
+Norm-2 valError 0.2444
+
+DeepInsight valErr: 0.2444
+
+Norm-2 valError 0.0989
+
+DeepInsight valErr: 0.0989
+
+Norm-2 valError 0.1007
+
+DeepInsight valErr: 0.1007
+
+Norm-2 valError 0.5020
+
+DeepInsight valErr: 0.5020
+
+Norm-2 valError 0.2223
+
+DeepInsight valErr: 0.2223
+
+Norm-2 valError 0.2460
+
+DeepInsight valErr: 0.2460
+
+Norm-2 valError 0.5909
+
+DeepInsight valErr: 0.5909
+
+Norm-2 valError 0.2537
+
+DeepInsight valErr: 0.2537
+
+Norm-2 valError 0.2427
+
+DeepInsight valErr: 0.2427
+
+Norm-2 valError 0.2889
+
+DeepInsight valErr: 0.2889
+
+Norm-2 valError 0.1135
+
+DeepInsight valErr: 0.1135
+
+Norm-2 valError 0.1102
+
+DeepInsight valErr: 0.1102
+
+Norm-2 valError 0.3229
+
+DeepInsight valErr: 0.3229
+
+Norm-2 valError 0.1105
+
+DeepInsight valErr: 0.1105
+
+Norm-2 valError 0.1156
+
+DeepInsight valErr: 0.1156
+
+Norm-2 valError 0.1288
+
+DeepInsight valErr: 0.1288
+
+Norm-2 valError 0.1030
+
+DeepInsight valErr: 0.1030
+
+Norm-2 valError 0.1167
+
+DeepInsight valErr: 0.1167
+
+Norm-2 valError 0.0315
+
+DeepInsight valErr: 0.0315
+
+Norm-2 valError 0.0165
+
+DeepInsight valErr: 0.0165
+
+Norm-2 valError 0.0165
+
+DeepInsight valErr: 0.0165
+
+Norm-2 valError 0.0345
+
+DeepInsight valErr: 0.0345
+
+Norm-2 valError 0.0274
+
+DeepInsight valErr: 0.0274
+
+Norm-2 valError 0.0319
+
+DeepInsight valErr: 0.0319
+
+Norm-2 valError 0.2197
+
+DeepInsight valErr: 0.2197
+
+Norm-2 valError 0.0076
+
+DeepInsight valErr: 0.0076
+
+Norm-2 valError 0.0227
+
+DeepInsight valErr: 0.0227
+
+Norm-2 valError 0.2426
+
+DeepInsight valErr: 0.2426
+
+Norm-2 valError 0.1864
+
+DeepInsight valErr: 0.1864
+
+Norm-2 valError 0.3314
+
+DeepInsight valErr: 0.3314
+
+Norm-2 valError 0.1820
+
+DeepInsight valErr: 0.1820
+
+Norm-2 valError 0.1400
+
+DeepInsight valErr: 0.1400
+
+Norm-2 valError 0.4083
+
+DeepInsight valErr: 0.4083
+
+Norm-2 valError 0.1519
+
+DeepInsight valErr: 0.1519
+
+Norm-2 valError 0.2653
+
+DeepInsight valErr: 0.2653
+
+Norm-2 valError 0.1805
+
+DeepInsight valErr: 0.1805
+
+Norm-2 valError 0.1874
+
+DeepInsight valErr: 0.1874
+
+Norm-2 valError 0.3462
+
+DeepInsight valErr: 0.3462
+
+Norm-2 valError 0.3504
+
+DeepInsight valErr: 0.3504
+
+Norm-2 valError 0.2607
+
+DeepInsight valErr: 0.2607
+
+Norm-2 valError 0.3376
+
+DeepInsight valErr: 0.3376
+
+Norm-2 valError 0.3291
+
+DeepInsight valErr: 0.3291
+
+Norm-2 valError 0.3632
+
+DeepInsight valErr: 0.3632
+
+Norm-2 valError 0.1302
+
+DeepInsight valErr: 0.1302
+
+Norm-2 valError 0.1538
+
+DeepInsight valErr: 0.1538
+
+Norm-2 valError 0.1065
+
+DeepInsight valErr: 0.1065
+
+Norm-2 valError 0.1538
+
+DeepInsight valErr: 0.1538
+
+Norm-2 valError 0.1509
+
+DeepInsight valErr: 0.1509
+
+Norm-2 valError 0.1716
+
+DeepInsight valErr: 0.1716
+
+Norm-2 valError 0.1420
+
+DeepInsight valErr: 0.1420
+
+Norm-2 valError 0.1820
+
+DeepInsight valErr: 0.1820
+
+Norm-2 valError 0.1509
+
+DeepInsight valErr: 0.1509
+
+Norm-2 valError 0.1787
+
+DeepInsight valErr: 0.1787
+
+Norm-2 valError 0.1728
+
+DeepInsight valErr: 0.1728
+
+Norm-2 valError 0.1637
+
+DeepInsight valErr: 0.1637

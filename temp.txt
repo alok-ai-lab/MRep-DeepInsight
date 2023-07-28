@@ -1,0 +1,17 @@
+clear MB
+parfor j=1:size(Out2.XTrain,4)
+    MB(:,:,:,j)=BlurTech(Out2.XTrain(:,:,:,j),Out2.xp,Out2.yp);
+end
+Out2.XTrain=MB;
+clear MB
+parfor j=1:size(Out2.XTest,4)
+    MB(:,:,:,j)=BlurTech(Out2.XTest(:,:,:,j),Out2.xp,Out2.yp);
+end
+Out2.XTest=MB;
+clear MB
+parfor j=1:size(Out2.XValidation,4)
+    MB(:,:,:,j)=BlurTech(Out2.XValidation(:,:,:,j),Out2.xp,Out2.yp);
+end
+Out2.XValidation=MB;
+clear MB
+save('Out2.mat','-struct','Out2','-v7.3');
