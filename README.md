@@ -73,23 +73,23 @@ In order to use one or a combination of the above techniques, please set the fol
    
 4) Change (Line 133) **$\textcolor{red}{\textsf{Parm.integrate}}$** as required. Some examples are given here under:
    
-   ex-1)    Use both tSNE with hamming distance and tSNE with Euclidean distance:
+   **ex-1)**    Use both tSNE with hamming distance and tSNE with Euclidean distance:
 
             `Parm.integrate={'tsne','hamming','tsne','euclidean'};`
 
       i.e. Define distance after tSNE technique {tsne, distance,...}      
 
-   ex-2)    Use tSNE with hamming distance and UMAP technique:
+   **ex-2)**    Use tSNE with hamming distance and UMAP technique:
    
             `Parm.integrate={'tsne','hamming','umap'};`
 
      i.e. umap does not require to define any distance. Same is true for KPCA and PCA.
    
-   ex-3)    Use UMAP. Kernel PCA and PCA:
+   **ex-3)**    Use UMAP. Kernel PCA and PCA:
    
             `Parm.integrate={'umap','kpca','pca'};`
 
-   ex-4)    Use tSNE with cosine, UMAP, Gabor, Blurring, Assignment and tsne with Chebychev:
+   **ex-4)**    Use tSNE with cosine, UMAP, Gabor, Blurring, Assignment and tsne with Chebychev:
    
             `Parm.integrate={'tsne','cosine','umap','gabor','blur','assignment','tsne','chebychev'};`
 
