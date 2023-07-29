@@ -27,6 +27,8 @@ Sharma A*, et. al.,MRep-DeepInsight, 2023 (TBA)
     >> tar -xvf MRep-DeepInsight.tar
     ```
 
+    Note: Install R/Python software to use UMAP (see `umap_Rmatlab.m`)
+
 2. Download example dataset from the following link (caution: data size is 17MB):
 
     `https://github.com/alok-ai-lab/MRep-DeepInsight/blob/main/Data/dataset4.mat`
