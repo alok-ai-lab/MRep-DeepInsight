@@ -14,6 +14,8 @@ Figure 1 depicts MRep-DeepInsight approach, where part a shows the transformatio
 
 <img src="https://github.com/alok-ai-lab/Supplementary/blob/main/Fig1_A4.png?raw=true" width="600" height="900">
 
+**Figure 1:** An overview of MRep-DeepInsight approach
+
 ### MRep-DeepInsight tested on:
 OS: Linux Ubuntu 20.04;
 Matlab version: 2022b;
