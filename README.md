@@ -10,19 +10,17 @@ Setting up the `Parameters.m` file enables one to run the package in various way
 
 MRep-DeepInsight3D package has 2 main components. 1) conversion of tabular data to image samples, and 2) processing images to the convolutional neural network (CNN). 
 
-This approach builds a 3D-image by arranging similar elements (or genes) together and dissimilar apart, and then by mapping the multi-layered non-image values on to these aligned pixel locations. This approach employs CNN for element or gene selection on non-image data. 
-
-### DeepInsight3D tested on:
+### MRep-DeepInsight tested on:
 OS: Linux Ubuntu 20.04;
-Matlab version: 2021a;
-GPU A100 (2 parallel);
+Matlab version: 2022b;
+GPU A100 (4 parallel);
 
 # Reference 
-Sharma A*, Lysenko A*, Boroevich K, Tsunoda T*, DeepInsight-3D for precision oncology: an improved anti-cancer drug response prediction from high-dimensional multi-omics data with convolutional neural networks, bioRxiv, 2022 https://doi.org/10.1101/2022.07.14.500140 
+Sharma A*, et. al.,MRep-DeepInsight, 2023 (TBA) 
 
 ## Download and Install
 
-1. Download Matlab package DeepInsight3D_pkg.tar.gz or the entire DeepInsight3D_pkg folder from the link above. Store it in your working directory. Gunzip and untar as follows:
+1. Download Matlab package MRep-DeepInsight from the link above. Store it in your working directory. Gunzip and untar as follows:
 
     ```Matlab
     >> gunzip DeepInsight3D_pkg.tar.gz
