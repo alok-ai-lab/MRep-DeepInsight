@@ -49,15 +49,21 @@ Sharma A*, et. al.,MRep-DeepInsight, 2023 (TBA)
 
 ## Manifold and supplement techniques for MRep-DeepInsight
 The following mapping techniques can be used for MRep-DeepInsight
-1) tSNE: with 11 distances: {Euclidean, Correlation, Minkowski, Standard Euclidean, Spearman, Jaccard, Cityblock, Hamming, Chebychev, Mahalanobis, Cosine};
-2) UMAP
-3) Kernel PCA
-4) PCA
+
+$\textcolor{red}{\textsf{1) tSNE:}}$ with 11 distances- {Euclidean, Correlation, Minkowski, Standard Euclidean, Spearman, Jaccard, Cityblock, Hamming, Chebychev, Mahalanobis, Cosine};
+
+$\textcolor{green}{\textsf{2) UMAP}}$ 
+
+$\textcolor{blue}{\textsf{3) Kernel PCA (KPCA)}}$ 
+
+$\textcolor{purple}{\textsf{4) PCA}}$ 
 
 The supplement techniques modify the mappings of manifold techniques. These techniques can't be run independently and therefore at least one manifold technique is required to use. The supplement techniques are:
-1) Gabor filtering
-2) Blurring technique
-3) Assignment distribution algorithm
+```diff
+-1) Gabor filtering
++2) Blurring technique
+-3) Assignment distribution algorithm
+```
 
 ### Parameter settings for MRep-DeepInsight
 In order to use one or a combination of the above techniques, please set the following parameter correctly.
