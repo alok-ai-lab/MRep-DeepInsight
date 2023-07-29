@@ -8,13 +8,13 @@ MRep-DeepInsight is built upon the previous package [DeepInsight3D](https://gith
 
 Setting up the `Parameters.m` file enables one to run the package in various ways including all the previously developed packages.
 
-MRep-DeepInsight3D package has 2 main components. 1) conversion of tabular data to image samples, and 2) processing images to the convolutional neural network (CNN). 
+The MRep-DeepInsight3D package has 2 main components. 1) conversion of tabular data to image samples, and 2) processing images to the convolutional neural network (CNN). 
 
-Figure 1 depicts MRep-DeepInsight approach, where part a shows the transformation phase, part b shows the model estimation phase, and part c illustrates the model analysis phase.
+Figure 1 depicts the MRep-DeepInsight approach, where part a shows the transformation phase, part b shows the model estimation phase, and part c illustrates the model analysis phase.
 
 <img src="https://github.com/alok-ai-lab/Supplementary/blob/main/Fig1_A4.png?raw=true" width="600" height="900">
 
-**Figure 1:** An overview of MRep-DeepInsight approach
+**Figure 1:** An overview of the MRep-DeepInsight approach
 
 ### MRep-DeepInsight tested on:
 OS: Linux Ubuntu 20.04;
@@ -22,11 +22,11 @@ Matlab version: 2022b;
 GPU A100 (4 parallel);
 
 # Reference 
-Sharma A*, et. al.,MRep-DeepInsight, 2023 (TBA) 
+Sharma A*, et. al., MRep-DeepInsight, 2023 (TBA) 
 
 ## Download and Install
 
-1. Download Matlab package MRep-DeepInsight.tar.gz or the entire directory from the link above. Store it in your working directory. Gunzip and untar as follows:
+1. Download the Matlab package MRep-DeepInsight.tar.gz or the entire directory from the link above. Store it in your working directory. Gunzip and untar as follows:
 
     ```Matlab
     >> gunzip MRep-DeepInsight.tar.gz
@@ -35,13 +35,13 @@ Sharma A*, et. al.,MRep-DeepInsight, 2023 (TBA)
 
     Note: Install R/Python software to use UMAP (see `umap_Rmatlab.m`)
 
-2. Download example dataset from the following link (caution: data size is 17MB):
+2. Download the example dataset from the following link (caution: data size is 17MB):
 
     [dataset4.mat](https://github.com/alok-ai-lab/MRep-DeepInsight/blob/main/Data/dataset4.mat)
    
    Move the dataset4.mat to the folder `MRep-DeepInsight/Data/`. 
 
-   The dataset is given in struct format of Matlab. Use any other data (binary class or multi-class) in a similar struct format for MRep-DeepInsight.
+   The dataset is given in the struct format of Matlab. Use any other data (binary class or multi-class) in a similar struct format for MRep-DeepInsight.
 
 3. Download and Install example CNN net such as ResNet-50 in Matlab, see details about ResNet-50 from MathWorks [link](https://www.mathworks.com/help/deeplearning/ref/resnet50.html). You may use different nets as desired.
 
@@ -69,7 +69,7 @@ The supplement techniques modify the mappings of manifold techniques. These tech
 In order to use one or a combination of the above techniques, please set the following parameter correctly.
 1) Open `Parameters.m` file.
 2) Change (Line 5) `Parm.UseIntegrate='yes';`.
-   Options are either `yes` or `no`. This will trigger `MRep-DeepInsight` methodology, and override `Parm.Method` option.
+   Options are either `yes` or `no`. This will trigger the `MRep-DeepInsight` methodology, and override `Parm.Method` option.
    
 4) Change (Line 133) `Parm.integrate` as required. Some examples are given here under:
    ex-1)    Use both tSNE with hamming distance and tSNE with Euclidean distance:
@@ -94,7 +94,7 @@ In order to use one or a combination of the above techniques, please set the fol
 
     Please note the term `blur` is used for `Blurring technique`; and `'assignment` is used for Assignment distribution technique.
 
-### Example 1: classification of tabular data using MRep-DeepInsight model
+### Example 1: classification of tabular data using the MRep-DeepInsight model
 In this example, tabular data with 2539 dimensions is used. It has 1178 training samples and 131 test samples. It is divided into two classes, namely Alzheimer's Disease (AD) and Normal Control (NC). First, the dataset is converted to images by the MRep-DeepInsight converter. Then the CNN net (resnet50) has been trained. The performance evaluation, in terms of accuracy, is done on the test set of the data.
 
 1. File: open the Example1.m file in the Matlab Editor.
@@ -117,7 +117,7 @@ In this example, tabular data with 2539 dimensions is used. It has 1178 training
     Dataset: PDX_Paclitaxel
     
     NORM-2
-    tSNE with burneshut algorithm has been used
+    tSNE with Burneshut algorithm has been used
     Distance: euclidean
 
     Pixels: 227 x 227
@@ -137,7 +137,7 @@ In this example, tabular data with 2539 dimensions is used. It has 1178 training
 
     *Note that the above values might differ.*
 
-    Objective function figure will be shown for the Bayesian Optimization Technique (BOT). By default 'no BOT' will be applied; i.e. `Parm.MaxObj=1`. However, if BOT is required then change parameter `Parm.MaxObj' to a value higher than 1. If it is set as 'Parm.MaxObj=20' then 20 objective functions will be searched for tuning hyperparameters and the best one (with the minimum validation error) will be selected.
+    The objective function figure will be shown for the Bayesian Optimization Technique (BOT). By default 'no BOT' will be applied; i.e. `Parm.MaxObj=1`. However, if BOT is required then change parameter `Parm.MaxObj' to a value higher than 1. If it is set as 'Parm.MaxObj=20' then 20 objective functions will be searched for tuning hyperparameters and the best one (with the minimum validation error) will be selected.
     
     Results file: check `DeepInsight3D_Results.txt` for more information, such as
     ```
@@ -164,7 +164,7 @@ Therefore, for BOT, use,
 
 `Parm.MaxObj=N`
 
-where, N is any number greater than 1, e.g. N=10 gives 10 objective functions.
+where N is any number greater than 1, e.g. N=10 gives 10 objective functions.
 
 For, NO BOT, use,
 
@@ -172,20 +172,20 @@ For, NO BOT, use,
 
 ## Description of files and folders
 
-1. `DeepInsight3D_pkg` has 4 folders: Data, DeepResults, FIGS and Models. It has several .m files. However, the main files are 1) `Deepinsight3D.m` to peform image conversion and CNN modeling, and 2) `func_FS_classbasedCAM.m` to perform feature selection. All the parameter settings can be done in `Parameters.m` file.
+1. `DeepInsight3D_pkg` has 4 folders: Data, DeepResults, FIGS, and Models. It has several .m files. However, the main files are 1) `Deepinsight3D.m` to perform image conversion and CNN modeling, and 2) `func_FS_classbasedCAM.m` to perform feature selection. All the parameter settings can be done in `Parameters.m` file.
 
 2. DeepInsight3D.m has 2 main functions:
 
-    * `func_Prepare_Data`: This function loads the data, splits the training data into the Train and Validation sets, normalizes all the 3 sets (including Test set), and converts multi-layered non-image samples to 3D image form using the Training set. The Test and Validation sets are not used to find pixel locations. Once the pixel locations are obtained, all the non-image samples are converted to 3D image samples. The image datasets are stored as Out1.mat or Out2.mat depending on whether norm1 or norm2 was selected.
+    * `func_Prepare_Data`: This function loads the data, splits the training data into the Train and Validation sets, normalizes all the 3 sets (including the Test set), and converts multi-layered non-image samples to 3D image form using the Training set. The Test and Validation sets are not used to find pixel locations. Once the pixel locations are obtained, all the non-image samples are converted to 3D image samples. The image datasets are stored as Out1.mat or Out2.mat depending on whether norm1 or norm2 was selected.
 
-    * `func_TrainModel`: This function executes the convolution neural network (CNN) using many pretrained and custom nets. The user may change the net as required. The default values of hyperparameters for CNN are used. However, if `Parm.MaxObj` is greater than 1 then it optimizes hyper-parameters using the Bayesian Optimization Technique. It uses Training set and Validation set to tune and evaluate the model hyper-parameters.
+    * `func_TrainModel`: This function executes the convolution neural network (CNN) using many pretrained and custom nets. The user may change the net as required. The default values of hyperparameters for CNN are used. However, if `Parm.MaxObj` is greater than 1 then it optimizes hyper-parameters using the Bayesian Optimization Technique. It uses a Training set and Validation set to tune and evaluate the model hyper-parameters.
 
         Note: To tune hyperparameters of CNN automatically, use a higher value of `Parm.MaxObj`.
 
         The best model (in case Parm.MaxObj>1) is stored in DeepResults folder as .mat files, where the file name depicts the best validation error achieved. For example, file 0.32624.mat in DeepResults folder tells the hyper-parameters at validation error 0.32624. Also, the model file `model.mat` details the weights file and other relevant information to be stored.
 
 3. Feature selection functions
-    * `func_FeatureSelection`: This will find activation maps at the ReLu layer, perform Region Accumulation (RA) step and Element Decoder step to find element/gene subset. The input is model.mat (from `func_TrainModel`) and related .mat file from the folder DeepResults. This function finds CAM for each sample and provide the union of all maps.
+    * `func_FeatureSelection`: This will find activation maps at the ReLu layer, perform Region Accumulation (RA) step and Element Decoder step to find the element/gene subset. The input is model.mat (from `func_TrainModel`) and related .mat file from the folder DeepResults. This function finds CAM for each sample and provides the union of all maps.
     * `func_FS_class_basedCAM`: This function performs class-based CAM, i.e., each class will have a distinct CAM.
     * `func_FeatureSelection_avgCAM`: This function finds the common CAM across all the samples.
 
@@ -195,13 +195,13 @@ For, NO BOT, use,
 
     * `ConvPixel`: The input is a non-image sample or feature vector and Z (from above). The output is an image sample corresponding to the input sample.
 
-4. Compression Snow-fall algorithm (SnowFall.m): Not used in this package. However, this compression algorithm is used to provide more space for features in the given pixel frame. Since the conversion from Cartesian coordinates system to the pixel frame depends on the pixel resolution, it becomes difficult to fit all the features without overlapping each other. This algorithm tries to create more space such that the overlapping of feature or gene location can be minimized. The input is the locations of genes or features with the pixel size information. The output is the readjusted image. It is up to the user to use Snow-fall compression or not by setting `Parm.SnowFall` to either `0` (not use) or `1` (use).
+4. Compression Snow-fall algorithm (SnowFall.m): Not used in this package. However, this compression algorithm is used to provide more space for features in the given pixel frame. Since the conversion from Cartesian coordinates system to the pixel frame depends on the pixel resolution, it becomes difficult to fit all the features without overlapping each other. This algorithm tries to create more space such that the overlapping of feature or gene locations can be minimized. The input is the locations of genes or features with the pixel size information. The output is the readjusted image. It is up to the user to use Snow-fall compression or not by setting `Parm.SnowFall` to either `0` (not use) or `1` (use).
 
-5. Extraction of Gene Names (optional): This option is useful for enrichment analysis. Two files for extraction of genes are GeneNames_Extract.m and GeneNames.m. The list of names of genes is stored in `~/DeepInsight3D_pkg/Models/RunY/StageX/` folder.
+5. Extraction of Gene Names (optional): This option is useful for enrichment analysis. Two files for the extraction of genes are GeneNames_Extract.m and GeneNames.m. The list of names of genes is stored in `~/DeepInsight3D_pkg/Models/RunY/StageX/` folder.
 
-    After running feature selection function, the results will be stored in the corresponding RunY and StageX folders (where X and Y are integers 1,2,3…). If it is required to find the gene IDs/names of the obtained subset for each cancer type, then execute `GeneNames_Extract` function. Go to Line 4, and set the `Out_Stages` variable. For e.g. if Stage 2 has been saved inside Run1 after executing `func_FS_class_basedCAM`, use `Out_Stages = 2`. Then go to Line 6 and define `FileRun`. 
+    After running the feature selection function, the results will be stored in the corresponding RunY and StageX folders (where X and Y are integers 1,2,3…). If it is required to find the gene IDs/names of the obtained subset for each cancer type, then execute `GeneNames_Extract` function. Go to Line 4, and set the `Out_Stages` variable. For e.g., if Stage 2 has been saved inside Run1 after executing `func_FS_class_basedCAM`, use `Out_Stages = 2`. Then go to Line 6 and define `FileRun`. 
 
-    The gene list per class will be generated. If there are 10 cancer-types, then 10 files will be generated. In addition, one file with all genes listed will be generated (e.g. GeneList_UnCmprss.txt). The results will be stored in `~/Models/RunY/StageX` as RunYStageX.tar.gz and a folder with the same results will also be created as RunYStageX. In this example, it will be stored in the folder `Run1Stage2` and Run1Stage2.tar.gz.
+    The gene list per class will be generated. If there are 10 cancer types, then 10 files will be generated. In addition, one file with all genes listed will be generated (e.g. GeneList_UnCmprss.txt). The results will be stored in `~/Models/RunY/StageX` as RunYStageX.tar.gz and a folder with the same results will also be created as RunYStageX. In this example, it will be stored in the folder `Run1Stage2` and Run1Stage2.tar.gz.
 
 
 ## Parameter settings to run the package
