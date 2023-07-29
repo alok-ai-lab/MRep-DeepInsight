@@ -71,7 +71,8 @@ In order to use one or a combination of the above techniques, please set the fol
 2) Change (Line 5) `Parm.UseIntegrate='yes';`.
    Options are either `yes` or `no`. This will trigger the `MRep-DeepInsight` methodology, and override `Parm.Method` option.
    
-4) Change (Line 133) `Parm.integrate` as required. Some examples are given here under:
+4) Change (Line 133) **$\textcolor{red}{\textsf{Parm.integrate}}$** as required. Some examples are given here under:
+   
    ex-1)    Use both tSNE with hamming distance and tSNE with Euclidean distance:
 
             `Parm.integrate={'tsne','hamming','tsne','euclidean'};`
