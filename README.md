@@ -12,7 +12,7 @@ MRep-DeepInsight3D package has 2 main components. 1) conversion of tabular data 
 
 Figure 1 depicts MRep-DeepInsight approach, where part a shows the transformation phase, part b shows the model estimation phase, and part c illustrates the model analysis phase.
 
-![alt text](https://github.com/alok-ai-lab/Supplementary/blob/main/Fig1_A4.png?raw=true)
+<img src="https://github.com/alok-ai-lab/Supplementary/blob/main/Fig1_A4.png?raw=true" width="600" height="900">
 
 ### MRep-DeepInsight tested on:
 OS: Linux Ubuntu 20.04;
