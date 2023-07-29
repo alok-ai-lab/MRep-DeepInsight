@@ -20,14 +20,14 @@ Sharma A*, et. al.,MRep-DeepInsight, 2023 (TBA)
 
 ## Download and Install
 
-1. Download Matlab package MRep-DeepInsight from the link above. Store it in your working directory. Gunzip and untar as follows:
+1. Download Matlab package MRep-DeepInsight.tar.gz or the entire directory from the link above. Store it in your working directory. Gunzip and untar as follows:
 
     ```Matlab
-    >> gunzip DeepInsight3D_pkg.tar.gz
-    >> tar -xvf DeepInsight3D_pkg.tar
+    >> gunzip MRep-DeepInsight.tar.gz
+    >> tar -xvf MRep-DeepInsight.tar
     ```
 
-2. Download example dataset from the following link (caution: data size is 88MB):
+2. Download example dataset from the following link (caution: data size is 17MB):
 
     `http://emu.src.riken.jp/DeepInsight/download_files/dataset1.mat`
    
