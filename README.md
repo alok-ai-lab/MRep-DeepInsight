@@ -44,17 +44,17 @@ In this example, a tabular data with 2539 dimensions is used. It has 1178 traini
 
 1. File: open Example1.m file in the Matlab Editor.
 
-2. Set up parameters by changing `Parameter.m` file. Based on your hardware requirements, change `Parm.miniBatchSize` (default is 512) and `Parm.ExecutionEnvironment` (default is multi-gpu). If you don't want to see the training progress plot produced by CNN training, then set `Parm.trainingPlot=none`. Alternatively, leave all the parameters to their default values.
+2. Set up parameters by changing `Parameter.m` file. Based on your hardware requirements, change `Parm.miniBatchSize` (default is 1024) and `Parm.ExecutionEnvironment` (default is multi-gpu). If you don't want to see the training progress plot produced by CNN training, then set `Parm.trainingPlot=none`. Alternatively, leave all the parameters to their default values.
 
-3. Dataset calling: since the dataset name is `dataset1.mat`, the variable `DSETnum=1` (at Line 17 of Example1.m) has been used. If the name of the dataset is `datasetX.m` then variable `DSETnum` should be set as `X`.
+3. Dataset calling: since the dataset name is `dataset4.mat`, the variable `DSETnum=4` (at Line 17 of Example1.m) has been used. If the name of the dataset is `datasetX.m` then variable `DSETnum` should be set as `X`.
 
 4. Example1.m file uses function DeepInsight3D.m. This function has two parts: 1) tabular data to image convertion using `func_Prepare_Data.m`, and 2) CNN training using resent50 (default or change as required) using `func_TrainModel.m`.
 
 5. The output is AUC (for 2-class problem only), C (confusion matrx) and Accuracy of the test set (at Line 28). It also gives ValErr which is the validation error.
 
-6. By default, trained CNN models (such as model.mat, 0*.mat) and converted data (either Out1.mat or Out2.mat) will be saved in folder /Models/Run1/ and figures will be stored in folder /FIGS/Run1/. The saving of files are done by calling the functions `func_SaveModels.m` and `func_SaveFigs.m`
+6. By default, trained CNN models (such as model.mat, 0*.mat) and converted data (either Out1.mat or Out2.mat) will be saved in folder /Models/Run4/ (since DSETnum=4; if DSETnum=N then saved in ../RunN/) and figures will be stored in folder /FIGS/Run4/ (since DSETnum=4). The saving of files is done by calling the functions `func_SaveModels.m` and `func_SaveFigs.m`
 
-7. The execution results are stored in `DeepInsight3D_Results.txt` file in the /DeepInsight3D_pkg/ folder.
+7. The execution results are stored in `DeepInsight3D_Results.txt` file in the /MRep-DeepInsight/ folder.
 
 8. A few messages will be displayed by running Example1.m on the Command Window of Matlab, such as
 
@@ -91,85 +91,6 @@ In this example, a tabular data with 2539 dimensions is used. It has 1178 traini
     25  13
     1   4
     ```
-### Example 2: Feature selection of saved model
-In this example, feature selection using class-activation maps (CAMs) is executed. It is assumed that Example 1 has been run before running this example. Running Example 1 will save model files in Models/Run.. folder, and also the data file Out1.mat (if norm1 is used) or Out2.mat (if norm2 is used).
-
-Running Example2.m will perform feature selection. However, steps (in Matlab) are described here under.
-
-1.  copy saved model files in the correct folders
-    ```
-    unix(['cp Models/Run1/stage1/model.mat .']);
-    unix(['cp Models/Run1/stage1/0.*.mat DeepResults']);
-    ```
-2.  Dataset is still the same therefore parameter `DSETnum=1`. Call parameters using `Parm = Parameters(DSETnum);`
-3.  Set CAM threshold e.g. `Parm.Threshold = 0.35;`
-4.  Execute classed-based CAM using `func_FS_class_basedCAM(Parm);` as shown in Example2.m (Line 29). The following information will be displayed on the screen.
-
-    ```
-    Feature selection begins
-    model = 
-       struct with fields
-       Norm: 2
-       bestIdx: 1
-       fileName: '0.32624.mat'
-    
-    Files saved in the FIGS folder
-    Files saved in the Models folder
-    #Genes = 5205; #Genes_compressed = 3331
-    Stage 1 Ends
-    ```
-Images will be stored in FIGS folder. The following command can be used to open images in the unix console/terminal:
-
-    
-    eog ~/DeepInsight3D_pkg/FIGS/Run1/Stage1/Class_Activation.jpg
-    
-Class activation image is given below. Since only two classes exist, the figure shows 'class1' and 'class2' activations.    
-    ![alt text](https://github.com/alok-ai-lab/DeepInsight3D/blob/main/Class_Activation.jpg?raw=true)
-    
-Vary the threshold `Parm.Threshold` between 0 and 1 to vary the number of selected features/genes.
-
-Features selected per class can also be viewed from FIGS/Run1/ folder.
-    ![alt text](https://github.com/alok-ai-lab/DeepInsight3D/blob/main/Genes_PerClass.jpg?raw=true)
-
-### Example 3: Feature selection using iterative procedure
-In this example, feature selection using CAMs is performed in an iterative manner. There are 3 steps in this iterative procedure:
-1)  conversion of multi-layered tabular data to 3D image.
-2)  estimation of CNN net using the training set and validation using the validation set.
-3)  feature selection using CAMs
-4)  repeating the above 3 steps until a desired number of features or maximum of 6 stages is reached. At this point, iterative procedure will be terminated.
-
-*Caution: this procedure could take a very long processing time (depending upon hardware specs)*
-
-Running Example3.m will execute iterative procedure. However, steps are described hereunder.
-
-Steps:
-1)  Set up parameters by changing Parameters.m file, otherwise leave it with default values.
-2)  Provide the path of the dataset in Parameter.m file by changing "Data_path" variable. In this example, it is set as /DeepInsight3D_pkg/Data/
-3)  Define the stored dataset using 
-        `DSETnum=1;`
-5)  Call parameters using 
-        `Parm = Parameters(DSETnum);`
-7)  For quick testing code, reduce the MaxEpochs e.g. 
-        `Parm.MaxEpochs = 5;`
-    for better training it would be good to have a higher value of MaxEpochs.
-    
-9)  Set the CAM Threshold 
-        `Parm.Threshold = 0.3;`
-11)  Suppress training plot (otherwise several plots will be invoked for every Stage)
-        `Parm.trainingPlot = 'none';`
-13)  Define the folder where models to be stored
-        `Parm.FileRun = 'Run2';`
-15)  The following code will perform iterative procedure:
-
-        ```
-        Glen = inf;
-        while (Glen > Parm.DesiredGenes) & (Parm.Stage < 7)
-            [AUC,C,Accuracy,ValErr] = DeepInsight3D(DSETnum,Parm);
-            [Genes,Genes_compressed,G] = func_FS_class_basedCAM(Parm);
-            Glen = length(Genes);
-            Parm.Stage = Parm.Stage + 1;
-        end
-        ```
 
  
 ### Note:
