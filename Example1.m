@@ -20,7 +20,7 @@ Parm = Parameters(DSETnum); % Define parameters for MRep-DeepInsight and CNN
 
 
 % NOTE: 1) Set "Parm.miniBatchSize" based on your GPU requirements. 
-%       by default Parm.miniBatchSize = 512.
+%       by default Parm.miniBatchSize = 1024.
 %   
 %       2) Set execution environment (for trainingOptions). By default it
 %       is set to 'multi-gpu'.
@@ -39,7 +39,7 @@ Parm = Parameters(DSETnum); % Define parameters for MRep-DeepInsight and CNN
 
 
 % Save model files
-func_SaveModels(Parm); % model files will be stored in ~/DeepInsight3D/Models/Run1/Stage1/ (if DSETnum=1)
+func_SaveModels(Parm); % model files will be stored in e.g. ~/DeepInsight3D/Models/Run1/Stage1/ (if DSETnum=1)
 
 % Save all figures
-func_SaveFigs(Parm); % all figures will be stored in ~/DeepInsight3D_pkg/FIGS/Run1/Stage1/
+func_SaveFigs(Parm); % all figures will be stored in e.g. ~/DeepInsight3D_pkg/FIGS/Run1/Stage1/ (if DSETnum=1)
