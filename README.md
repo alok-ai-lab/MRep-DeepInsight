@@ -10,6 +10,10 @@ Setting up the `Parameters.m` file enables one to run the package in various way
 
 MRep-DeepInsight3D package has 2 main components. 1) conversion of tabular data to image samples, and 2) processing images to the convolutional neural network (CNN). 
 
+Figure 1 depicts MRep-DeepInsight approach, where part a shows the transformation phase, part b shows the model estimation phase, and part c illustrates the model analysis phase.
+
+![alt text](https://github.com/alok-ai-lab/Supplementary/blob/main/Fig1_A4.png?raw=true)
+
 ### MRep-DeepInsight tested on:
 OS: Linux Ubuntu 20.04;
 Matlab version: 2022b;
