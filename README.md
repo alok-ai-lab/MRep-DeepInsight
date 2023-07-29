@@ -41,6 +41,22 @@ Sharma A*, et. al.,MRep-DeepInsight, 2023 (TBA)
 
 4. Executing the MRep-DeepInsight: all the codes should be run in the folder ../MRep-DeepInsight/, if you want to run in a different folder then addpath to appropriate directories in Matlab
 
+## Manifold and supplement techniques for MRep-DeepInsight
+The following mapping techniques can be used for MRep-DeepInsight
+1) tSNE with the following 11 distances: {Euclidean, Correlation, Minkowski, Standard Euclidean, Spearman, Jaccard, Cityblock, Hamming, Chebychev, Mahalanobis, Cosine};
+2) UMAP
+3) Kernel PCA
+4) PCA
+
+The supplement techniques modify the mappings of manifold techniques. These are:
+1) Gabor filtering
+2) Blurring technique
+3) Assignment distribution algorithm
+
+In order to one or a combination of the above techniques, please set the following parameter correctly.
+1) Open `Parameters.m` file.
+2) Change (Line 5) `Parm.UseIntegrate='yes';`. Options are either `yes` or `no`. This will trigger `MRep-DeepInsight` methodology
+
 ### Example 1: classification of tabular data using MRep-DeepInsight model
 In this example, tabular data with 2539 dimensions is used. It has 1178 training samples and 131 test samples. It is divided into two classes, namely Alzheimer's Disease (AD) and Normal Control (NC). First, the dataset is converted to images by the MRep-DeepInsight converter. Then the CNN net (resnet50) has been trained. The performance evaluation, in terms of accuracy, is done on the test set of the data.
 
