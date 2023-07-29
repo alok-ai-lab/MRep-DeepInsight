@@ -29,17 +29,17 @@ Sharma A*, et. al.,MRep-DeepInsight, 2023 (TBA)
 
 2. Download example dataset from the following link (caution: data size is 17MB):
 
-    `http://emu.src.riken.jp/DeepInsight/download_files/dataset1.mat`
+    `https://github.com/alok-ai-lab/MRep-DeepInsight/blob/main/Data/dataset4.mat`
    
-   Move the dataset to the `Data` folder inside `DeepInsight3D_pkg` folder. The dataset path will look like this: `/DeepInsight3D_pkg/Data/dataset1.mat`
+   Move the dataset4.mat to the folder `MRep-DeepInsight/Data/`. 
 
-   This example data is PDX_Paclitaxel multi-omics data, it has 3 layers: RNA-seq, CNA and mutation. The dataset is given in struct format of Matlab. Use any other data in a similar struct format for DeepInsight3D model.
+   The dataset is given in struct format of Matlab. Use any other data (binary class or multi-class) in a similar struct format for MRep-DeepInsight.
 
 3. Download and Install example CNN net such as ResNet-50 in Matlab, see details about ResNet-50 from MathWorks [link](https://www.mathworks.com/help/deeplearning/ref/resnet50.html). You may use different nets as desired.
 
-4. Executing the DeepInsight3D_pkg: all code should run in the folder ../DeepInsight3D_pkg/, if you want to run in a different folder then addpath in Matlab
+4. Executing the MRep-DeepInsight: all the codes should be run in the folder ../MRep-DeepInsight/, if you want to run in a different folder then addpath to appropriate directories in Matlab
 
-### Example 1: classification of multi-omics or multi-layered data using DeepInsight3D model
+### Example 1: classification of tabular data using MRep-DeepInsight model
 In this example, multi-omics example data (PDX_Paclitaxel) is used which is stored in DeepInsight3D_pkg/Data folder as 'dataset1.mat'. It is split into the training set and test set. The first layer is RNA seq, second layer is CNA and the third layer is mutation. These layers are first converted to 3D images using the DeepInsight3D converter. Then the CNN net (resnet50) has been trained. The performance evaluation, in terms of accuracy and AUC, are done on the test set of the data.
 
 1. File: open Example1.m file in the Matlab Editor.
