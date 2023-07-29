@@ -100,20 +100,25 @@ In this example, tabular data with 2539 dimensions is used. It has 1178 training
 
 1. File: open the Example1.m file in the Matlab Editor.
 
-2. In order to activate MRep-DeepInsight pipeline, the variable `Parm.UseIntegrate=yes` in the `Parameters.m` file
-3. Set up parameters by changing the `Parameters.m` file. Based on your hardware requirements, change `Parm.miniBatchSize` (default is 1024) and `Parm.ExecutionEnvironment` (default is multi-gpu). If you don't want to see the training progress plot produced by CNN training, then set `Parm.trainingPlot=none`. Alternatively, leave all the parameters to their default values.
+2. In order to activate MRep-DeepInsight pipeline, set true the variable `Parm.UseIntegrate=yes` in the `Parameters.m` file.
+   
+3. Depending upon how many representations are required, setup `Parm.integrate` in the `Parameters.m` file.
+   For e.g. define `Parm.integrate={'tsne','hamming','tsne','euclidean'}`, i.e., two representations (m=2).
 
-4. Dataset calling: since the dataset name is `dataset4.mat`, the variable `DSETnum=4` (at Line 17 of Example1.m) has been used. If the name of the dataset is `datasetX.m` then variable `DSETnum` should be set as `X`.
+4. Set up other parameters as required by changing the `Parameters.m` file, otherwise leave all as default.
+   However, based on your hardware requirements, change `Parm.miniBatchSize` to lower value if encountering memory problems (we use the default value as 1024) and also `Parm.ExecutionEnvironment` (default is multi-gpu). If you don't want to see the training progress plot produced by CNN training, then set `Parm.trainingPlot=none`. 
 
-5. Example1.m file uses function DeepInsight3D.m. This function has two parts: 1) tabular data to image conversion using `func_Prepare_Data.m`, and 2) CNN training using resent50 (default or change as required) using `func_TrainModel.m`.
+5. Dataset calling: since the dataset name is `dataset4.mat`, set the variable `DSETnum=4` (at Line 17 of Example1.m) has been used. If the name of the dataset is `datasetX.m` then variable `DSETnum` should be set as `X`.
 
-6. The output is AUC (for 2-class problem only), C (confusion matrix) and Accuracy of the test set (at Line 28). It also gives ValErr which is the validation error.
+6. Example1.m file uses updated function DeepInsight3D.m. This function has two parts: 1) tabular data to image conversion using `func_Prepare_Data.m` (supports previously developed converters) and `func_integrate.m` (supports MRep-DeepInsight), and 2) CNN training using resent50 (default or change as required) using `func_TrainModel.m`.
 
-7. By default, trained CNN models (such as model.mat, 0*.mat) and converted data (either Out1.mat or Out2.mat) will be saved in folder /Models/Run4/ (since DSETnum=4; if DSETnum=N then saved in ../RunN/) and figures will be stored in folder /FIGS/Run4/ (since DSETnum=4). The saving of files is done by calling the functions `func_SaveModels.m` and `func_SaveFigs.m`
+7. The output is AUC (for 2-class problem only), C (confusion matrix) and Accuracy of the test set (at Line 28). It also gives ValErr which is the validation error.
 
-8. The execution results are stored in the `DeepInsight3D_Results.txt` file in the /MRep-DeepInsight/ folder.
+8. By default, trained CNN models (such as model.mat, 0*.mat) and converted tabular data to images (either Out1.mat or Out2.mat) will be saved in folder /Models/Run4/ (since DSETnum=4; if DSETnum=N then saved in ../RunN/) and figures will be stored in folder /FIGS/Run4/ (since DSETnum=4). The saving of files is done by calling the functions `func_SaveModels.m` and `func_SaveFigs.m`
 
-9. A few messages will be displayed by running Example1.m on the Command Window of Matlab, such as
+9. The execution results are stored in the file `DeepInsight3D_Results.txt` which is stored in the folder /MRep-DeepInsight/.
+
+10. A few messages will be displayed by running Example1.m on the Command Window of Matlab, such as
 
     ```
     Dataset: PDX_Paclitaxel
