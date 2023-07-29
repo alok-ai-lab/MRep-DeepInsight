@@ -3,7 +3,7 @@ function Parm = Parameters(DSETnum)
 
 Parm.Method = ['tsne'];%['tsne'];%['tsne']; % 1) tSNE 2) kpca or 3) pca 4) umap 5) lda (supervised) 6) direct
 Parm.UseIntegrate = 'yes'; % yes | no - for integrated method Parm.Method 
-                           % will be overwritten if 'yes'.
+                           % will be overwritten if 'yes'. This will trigger MRep-DeepInsight methodology.
 Parm.TightRep.Perm = 'no';%'yes'; % 'yes' | 'no' - DeepInsight Tight Representation.
                       % Note: output will be an N x N matrix where N =
                       % ceil(sqrt(n)) and n is the number of data/feature points.
