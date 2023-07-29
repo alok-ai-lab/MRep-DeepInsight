@@ -30,7 +30,7 @@ Parm.UsePrevModel = 'n'; % 'y' for yes and 'n' for no (for CNN). For 'y' the hyp
 Parm.SaveModels = 'y'; % 'y' for saving models or 'n' for not saving
 Parm.Stage=1; % '1', '2', '3', '4', '5' depending upon which stage of DeepInsight-FS to run.
 Parm.ObjFcnMeasure = 'accuracy';%'accuracy' or 'other' % select objective function valError (accuracy or other (for other measures eg sensitiity, specificity, auc etc)
-Parm.MaxObj = 1; % maximum objective functions for Bayesian Optimization Technique
+Parm.MaxObj = 25;%1; % maximum objective functions for Bayesian Optimization Technique
 Parm.ParallelNet = 0;%0; % if '1' then parallel net (from DeepInsight project) will be used using makeObjFcn2.m
 if Parm.MaxObj==1
     Parm.InitialLearnRate=4.98661e-5;
@@ -126,11 +126,11 @@ if strcmp(Parm.TightRep.Perm,'yes')==1
 end
 %##########################################################
 
-% Integrated method #######################################
+% MRep-DeepInsiht: Integrated method #######################################
 %Parm.integrate = {'tsne','euclidean','tsne','hamming',...
 %                    'umap','assignment','blur','gabor'}; % add as required
 %Parm.integrate = {'tsne','hamming','tsne','euclidean','gabor','umap'};
-Parm.integrate = {'tsne','hamming','tsne','euclidean','tsne','cosine','umap','gabor'};%{'tsne','hamming','assignment','umap','gabor'}; % add as required
+Parm.integrate = {'tsne','hamming','umap'}; % add as required
 
 Tsne=strcmpi(Parm.integrate,'tsne');
 Umap=strcmpi(Parm.integrate,'umap');
