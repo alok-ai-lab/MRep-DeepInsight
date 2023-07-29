@@ -49,12 +49,12 @@ Sharma A*, et. al.,MRep-DeepInsight, 2023 (TBA)
 
 ## Manifold and supplement techniques for MRep-DeepInsight
 The following mapping techniques can be used for MRep-DeepInsight
-1) tSNE with the following 11 distances: {Euclidean, Correlation, Minkowski, Standard Euclidean, Spearman, Jaccard, Cityblock, Hamming, Chebychev, Mahalanobis, Cosine};
+1) tSNE: with 11 distances: {Euclidean, Correlation, Minkowski, Standard Euclidean, Spearman, Jaccard, Cityblock, Hamming, Chebychev, Mahalanobis, Cosine};
 2) UMAP
 3) Kernel PCA
 4) PCA
 
-The supplement techniques modify the mappings of manifold techniques. These are techniques can't be run independently and therefore at least one manifold technique is required to use. The supplement techniques are:
+The supplement techniques modify the mappings of manifold techniques. These techniques can't be run independently and therefore at least one manifold technique is required to use. The supplement techniques are:
 1) Gabor filtering
 2) Blurring technique
 3) Assignment distribution algorithm
@@ -140,7 +140,6 @@ In this example, tabular data with 2539 dimensions is used. It has 1178 training
     25  13
     1   4
     ```
-
  
 ### Note:
 
@@ -151,6 +150,19 @@ In this example, tabular data with 2539 dimensions is used. It has 1178 training
 `~/DeepInsight3D_pkg/FIGS/Run1/StageX` where X is the current stage.
 
 * If the loop continues then the value of X will increment to 1, 2, 3, …; i.e., repeating DeepInsight3D model to find a smaller subset of features/genes.
+
+### Bayesian Optimization vs NO Bayesian Optimization
+For hyperparameter tuning, Bayesian Optimization Technique (BOT) can be used. If `Parm.MaxObj=1` then NO BOT will be applied. If it is N>1 (i.e. greater than 1) then N objectives functions will be created and the best hyperparameters (for which the validation error is the minimum) will be selected.
+
+Therefore, for BOT, use,
+
+`Parm.MaxObj=N`
+
+where, N is any number greater than 1, e.g. N=10 gives 10 objective functions.
+
+For, NO BOT, use,
+
+`Parm.MaxObj=1`
 
 ## Description of files and folders
 
