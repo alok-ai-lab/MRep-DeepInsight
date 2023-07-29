@@ -48,14 +48,27 @@ The following mapping techniques can be used for MRep-DeepInsight
 3) Kernel PCA
 4) PCA
 
-The supplement techniques modify the mappings of manifold techniques. These are:
+The supplement techniques modify the mappings of manifold techniques. These are techniques can't be run independently and therefore at least one manifold technique is required to use. The supplement techniques are:
 1) Gabor filtering
 2) Blurring technique
 3) Assignment distribution algorithm
 
-In order to one or a combination of the above techniques, please set the following parameter correctly.
+### Parameter settings for MRep-DeepInsight
+In order to use one or a combination of the above techniques, please set the following parameter correctly.
 1) Open `Parameters.m` file.
-2) Change (Line 5) `Parm.UseIntegrate='yes';`. Options are either `yes` or `no`. This will trigger `MRep-DeepInsight` methodology
+2) Change (Line 5) `Parm.UseIntegrate='yes';`. Options are either `yes` or `no`. This will trigger `MRep-DeepInsight` methodology.
+3) Change (Line 133) `Parm.integrate` as required. Some examples are given here under:
+   ex-1)    Use both tSNE with hamming distance and tSNE with Euclidean distance
+            `Parm.integrate={'tsne','hamming','tsne','euclidean'};` ie Define distance after tSNE technique {tsne, distance,...}
+
+   ex-2)    Use tSNE with hamming distance and UMAP technique
+            `Parm.integrate={'tsne','hamming','umap'};` ie umap does not require to define any distance. Same is true for KPCA and PCA.
+
+   ex-3)    Use UMAP. Kernel PCA and PCA
+            `Parm.integrate={'umap','kpca','pca'};`
+
+   ex-4)    Use tSNE with cosine, UMAP, Gabor, Blurring, Assignment and tsne with Chebychev
+            `Parm.integrat={'tsne','cosine','umap','gabor','blur','assignment','tsne','chebychev'};`
 
 ### Example 1: classification of tabular data using MRep-DeepInsight model
 In this example, tabular data with 2539 dimensions is used. It has 1178 training samples and 131 test samples. It is divided into two classes, namely Alzheimer's Disease (AD) and Normal Control (NC). First, the dataset is converted to images by the MRep-DeepInsight converter. Then the CNN net (resnet50) has been trained. The performance evaluation, in terms of accuracy, is done on the test set of the data.
