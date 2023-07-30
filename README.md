@@ -103,9 +103,9 @@ In this example, tabular data with 2539 dimensions is used. It has 1178 training
 2. In order to activate MRep-DeepInsight pipeline, set true the variable `Parm.UseIntegrate=yes` in the `Parameters.m` file.
    
 3. Depending upon how many representations are required, setup `Parm.integrate` in the `Parameters.m` file.
-   For e.g. define `Parm.integrate={'tsne','hamming','tsne','euclidean'}`, i.e., two representations (m=2).
+   For e.g. define `Parm.integrate={'tsne','hamming','tsne','cosine'}`, i.e., two representations (m=2).
 
-4. For a quick test of codes, use 1 objective function; i.e., `Parm.MaxObj=1`, and a small value for `Parm.MaxEpochs`. The recommended MaxObj value is 25 or over, and for MaxEpochs is over 50.
+4. For a quick test of codes, use 1 objective function; i.e., `Parm.MaxObj=1`. The recommended MaxObj value is 25 or over.
 
 5. Set up other parameters as required by changing the `Parameters.m` file, otherwise leave all as default.
    However, based on your hardware requirements, change `Parm.miniBatchSize` to lower value if encountering memory problems (we use the default value as 1024) and also `Parm.ExecutionEnvironment` (default is multi-gpu). If you don't want to see the training progress plot produced by CNN training, then set `Parm.trainingPlot=none`. 
@@ -134,8 +134,9 @@ In this example, tabular data with 2539 dimensions is used. It has 1178 training
     Dataset: Alzheimer 1 and 5
 
     NORM-2
-    umap is used
-
+    tsne with exact algorithm is used
+    Distance: cosine
+    
     Pixels: 224 x 224
     Integrated conversion finished and saved as Out1.mat or Out2.mat!
     Training model begins: Net1
