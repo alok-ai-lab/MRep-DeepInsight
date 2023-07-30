@@ -291,72 +291,73 @@ A number of parameters/variables are used to control the DeepFeature_pkg. The de
 6. `Parm.ValidRatio` (ratio of validation data and training data)
 
     The amount of training data required to be used as a validation set. Default is 0.1; i.e., 10% of training data is kept aside as a validation set. The new training set will be 90% of the original size.
+   **Note**: If `Parm.ValidRatio=0` then not validation set will be kept aside. In this case, entire training set will be used for model estimaton.
 
-7. `Parm.Seed`
+8. `Parm.Seed`
 
     Random parameter seed to split the data.
 
-8.  `Parm.NetName`: use pre-trained nets such as `resnet50`, `inceptionresnetv2`, `nasnetlarge`, `efficientnetb0`, `googlenet` and so on. See a list of pre-trained nets from Matlab link [here](https://www.mathworks.com/help/deeplearning/ug/pretrained-convolutional-neural-networks.html)
+9.  `Parm.NetName`: use pre-trained nets such as `resnet50`, `inceptionresnetv2`, `nasnetlarge`, `efficientnetb0`, `googlenet` and so on. See a list of pre-trained nets from Matlab link [here](https://www.mathworks.com/help/deeplearning/ug/pretrained-convolutional-neural-networks.html)
 
-9.  `Parm.ExecutionEnvironment`: execution environment based on your hardware. Options are `cpu`, `gpu`, `multi-gpu`, `parallel`, and `auto`. Please check trainingOptions (Matlab) for further details.
+10.  `Parm.ExecutionEnvironment`: execution environment based on your hardware. Options are `cpu`, `gpu`, `multi-gpu`, `parallel`, and `auto`. Please check trainingOptions (Matlab) for further details.
 
-10.  `Parm.ParallelNet`: if '1' then this option overrides `Parm.NetName`. The custom made net from `makeObjFcn2.m` will be used.
+11.  `Parm.ParallelNet`: if '1' then this option overrides `Parm.NetName`. The custom made net from `makeObjFcn2.m` will be used.
 
-11.  `Parm.miniBatchSize`: define miniBatchSize, default is 512.
+12.  `Parm.miniBatchSize`: define miniBatchSize, default is 512.
 
-12.  `Parm.Augment`: augment samples during training progress, select '1' for yes and '0' for no.
+13.  `Parm.Augment`: augment samples during training progress, select '1' for yes and '0' for no.
 
-13.  `Parm.AugMeth`: select method '1' or '2'. Method 1 automatically augments samples whereas Method 2 is done by the user
+14.  `Parm.AugMeth`: select method '1' or '2'. Method 1 automatically augments samples whereas Method 2 is done by the user
 
-14.  `Parm.aug_tr`: if `Parm.AugMeth=2` then `Parm.aug_tr=500` will augment 500 samples of training set if the number of samples in a class is less than 500.
+15.  `Parm.aug_tr`: if `Parm.AugMeth=2` then `Parm.aug_tr=500` will augment 500 samples of training set if the number of samples in a class is less than 500.
 
-15.  `Parm.aug_val`: if `Parm.Aug=2` then `Parm.aug_val=50` will augment 50 samples of validation set if the number of samples in a class is less than 50.
+16.  `Parm.aug_val`: if `Parm.Aug=2` then `Parm.aug_val=50` will augment 50 samples of validation set if the number of samples in a class is less than 50.
 
-16.  `Parm.ApplyFS`: if '1' it applies a feature selection process using Logistic Regression before applying DeepInsight transformation.
+17.  `Parm.ApplyFS`: if '1' it applies a feature selection process using Logistic Regression before applying DeepInsight transformation.
 
-17.  `Parm.FeatureMap`: has following options. `0` means use 'all' omics or multi-layered data for conversion.
+18.  `Parm.FeatureMap`: has following options. `0` means use 'all' omics or multi-layered data for conversion.
                             '1' means use the 1st layer for conversion (e.g. expression)
                             '2' means use the 2nd layer for conversion (e.g. methylation)
                             '3' means use the 3rd layer for conversion (e.g. mutation)
                             
-18.  `Parm.TransLearn`: if '1' then learn CNN from previously trained nets on your different datasets.
+19.  `Parm.TransLearn`: if '1' then learn CNN from previously trained nets on your different datasets.
 
-19. `Parm.FileRun`
+20. `Parm.FileRun`
 
     Change the name as RunX, where X is an integer defining the run of DeepFeature on your data.
 
     Change the value X for new runs.
 
-20. `Parm.SnowFall` (compression algorithm)
+21. `Parm.SnowFall` (compression algorithm)
 
     Suppose SnowFall compression algorithm is used then set the value as 1, otherwise 0. Default is set as 1.
 
-21. `Parm.Threshold` (for Class Activation Maps)
+22. `Parm.Threshold` (for Class Activation Maps)
 
     Set the threshold of class activation maps (CAMs) by changing the value between 0 and 1. If the value is high (towards 1), then the region of activation maps will be very fine. On the other hand, the region will be broader towards value 0. Default is 0.3. 
 
-22. `Parm.DesiredGenes`
+23. `Parm.DesiredGenes`
 
     Expected number of genes to be selected. Default is set as 1200. However, change as required.
 
-23. `Parm.UsePrevModel`
+24. `Parm.UsePrevModel`
 
     The iterative way runs in multiple stages. If you want to avoid running CNN multiple times then set these values as ‘y’ (yes); i.e., the previous weights of CNN will be used for the current model. This way, the processing time is shorter, however, performance (in terms of selection and accuracy) would be lower. The default setting is ‘n’ (no).
 
-24. `Parm.SaveModels`
+25. `Parm.SaveModels`
 
     For saving models type ‘y’, otherwise ‘n’. Default is set as yes ‘y’.
 
-25. `Parm.Stage`
+26. `Parm.Stage`
 
     Define the stage of execution. The default value is set as `Parm.Stage=1`. All the results will be saved in RunXStage1. If iterative process is executed then results will be stored in Stage2, Stage3… and so on.
 
 
-26. `Parm.PATH`
+27. `Parm.PATH`
 
     Default paths for FIGS, Models and Data are `~/DeepInsight3D_pkg/FIGS/`, `~/DeepInsight3D_pkg/Models/` and `~/DeepInsight3D/Data/`, respectively. Runtime parameters will be stored in `~/DeepInsight3D_pkg/` folder (such as model.mat, Out1.mat or Out2.mat).
 
-27. Log and performance file (including an overview of parameter information)
+28. Log and performance file (including an overview of parameter information)
 
     The runtime results will be stored in `~/DeepFeature/DeepInsight3D_Results.txt` with complete information about the run.
 
