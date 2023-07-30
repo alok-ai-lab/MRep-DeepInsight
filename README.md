@@ -36,7 +36,7 @@ Sharma A*, et. al., MRep-DeepInsight, 2023 (TBA)
     **Note**:
    1) Install R/Python software to use UMAP (see `umap_Rmatlab.m`).  
    2) This package also uses liblinear tools. Therefore, load liblinear package and set the path correctly in Line 54, [Integrated_Test.m](https://github.com/alok-ai-lab/MRep-DeepInsight/blob/main/Integrated_Test.m).
-      Alternatively, comment out call for weighted integrated accuracy & AUC (Lines 38-75, [Integrated_Test.m](https://github.com/alok-ai-lab/MRep-DeepInsight/blob/main/Integrated_Test.m).
+      Alternatively, comment out call for weighted integrated accuracy & AUC (Lines 38-75, [Integrated_Test.m](https://github.com/alok-ai-lab/MRep-DeepInsight/blob/main/Integrated_Test.m)).
 
 3. Download the example dataset from the following link (caution: data size is 17MB):
 
