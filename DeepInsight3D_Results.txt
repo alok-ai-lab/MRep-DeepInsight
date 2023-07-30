@@ -1,0 +1,23 @@
+
+Run4
+SnowFall: 0
+Method: tsne
+Distance: hamming
+Use Previous Model: n
+
+Integrated Test Accuracy: 83.9695
+
+Weighted Integrated Test Accuracy: 84.7328
+
+Integrated Test AUC: 0.8692
+
+Weighted Integrated Test AUC: 0.8702
+Stage 1
+Net: resnet50
+ObjFcnMeasure: accuracy
+Stage: 1; Test Accuracy: 83.9695; ValErr: 0.1834; 
+Momentum: 0.801033; L2Regularization: 0.0125157; InitLearnRate: 4.98661e-05
+AUC: 0.8692; 
+ConfusionMatrix:
+99	3	
+18	11	
