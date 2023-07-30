@@ -134,10 +134,10 @@ In this example, tabular data with 2539 dimensions is used. It has 1178 training
     Dataset: Alzheimer 1 and 5
 
     NORM-2
-    tSNE with exact algorithm is used
-    Distance: euclidean
+    umap is used
 
     Pixels: 224 x 224
+    Integrated conversion finished and saved as Out1.mat or Out2.mat!
     Training model begins: Net1
     ...
     Out =
