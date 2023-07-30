@@ -130,7 +130,7 @@ end
 %Parm.integrate = {'tsne','euclidean','tsne','hamming',...
 %                    'umap','assignment','blur','gabor'}; % add as required
 %Parm.integrate = {'tsne','hamming','tsne','euclidean','gabor','umap'};
-Parm.integrate = {'tsne','hamming','umap'}; % add as required
+Parm.integrate = {'tsne','hamming','tsne','cosine'}; % add as required
 
 Tsne=strcmpi(Parm.integrate,'tsne');
 Umap=strcmpi(Parm.integrate,'umap');
