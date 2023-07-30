@@ -216,21 +216,21 @@ For, NO BOT, use,
 
 ## Description of files and folders
 
-1. `MRep-DeepInsight` has 4 folders: Data, DeepResults, FIGS, and Models. It has several .m files. However, the main file is `Deepinsight3D.m`, which performs tabular data to image conversion and CNN modelling. The codes of MRep-DeepInsight is developed on DeepInsight3D package and therefore it can perform all tasks of previously developed models such as DeepInsight, DeepFeature and DeepInsight3D. All the parameter settings can be done in the `Parameters.m` file.
+1. `MRep-DeepInsight` has 4 folders: Data, DeepResults, FIGS, and Models. It has several .m files. However, the main file is `Deepinsight3D.m`, which performs tabular data to image conversion and CNN modelling. The codes of MRep-DeepInsight is developed on the DeepInsight3D package and therefore it can perform all tasks of previously developed models such as DeepInsight, DeepFeature and DeepInsight3D. All the parameter settings can be done in the `Parameters.m` file.
 
-2. DeepInsight3D.m has 2 main functions:
+2. DeepInsight3D.m has following functions:
 
-    * `func_integrated`: This function supports transforms tabular data to image data using MRep-DeepInsight methodology. It loads the data, splits the training data into the Train and Validation sets, normalizes all the 3 sets (including the Test set), and converts samples to images form using the Training set. The Test and Validation sets are not used to find pixel locations. The image datasets are stored as Out1.mat or Out2.mat depending on whether norm1 or norm2 was selected.
+    * `func_integrated`: This function supports transforming tabular data to image data using MRep-DeepInsight methodology. It loads the data, splits the training data into the Train and Validation sets, normalizes all the 3 sets (including the Test set), and converts samples to images form using the Training set. The Test and Validation sets are not used to find pixel locations. The image datasets are stored as Out1.mat or Out2.mat depending on whether norm1 or norm2 was selected.
 
-    * `Integrated_Test`: This function computes the integrated performance (as shown in Figures 1c: model analysis phase). 
+    * `Integrated_Test`: This function computes the integrated performance (as shown in Figure 1c: model analysis phase). 
 
-    * `func_Prepare_Data`: This function supports previously models (DeepFeature, DeepInsight and DeepInsight3D). It loads the data, splits the training data into the Train and Validation sets, normalizes all the 3 sets (including the Test set), and converts multi-layered non-image samples to 3D image form using the Training set. The Test and Validation sets are not used to find pixel locations. Once the pixel locations are obtained, all the non-image samples are converted to 3D image samples. The image datasets are stored as Out1.mat or Out2.mat depending on whether norm1 or norm2 was selected.
+    * `func_Prepare_Data`: This function supports previous models (DeepFeature, DeepInsight and DeepInsight3D). It loads the data, splits the training data into the Train and Validation sets, normalizes all the 3 sets (including the Test set), and converts multi-layered non-image samples to 3D image form using the Training set. The Test and Validation sets are not used to find pixel locations. Once the pixel locations are obtained, all the non-image samples are converted to 3D image samples. The image datasets are stored as Out1.mat or Out2.mat depending on whether norm1 or norm2 was selected.
 
     * `func_TrainModel`: This function executes the convolution neural network (CNN) using many pretrained and custom nets. The user may change the net as required. The default values of hyperparameters for CNN are used. However, if `Parm.MaxObj` is greater than 1 then it optimizes hyper-parameters using the Bayesian Optimization Technique. It uses a Training set and Validation set to tune and evaluate the model hyper-parameters.
 
         Note: To tune hyperparameters of CNN automatically, use a higher value of `Parm.MaxObj`.
 
-        The best model (in case Parm.MaxObj>1) is stored in DeepResults folder as .mat files, where the file name depicts the best validation error achieved. For example, file 0.32624.mat in DeepResults folder tells the hyper-parameters at validation error 0.32624. Also, the model file `model.mat` details the weights file and other relevant information to be stored.
+        The best model (in case Parm.MaxObj>1) is stored in the DeepResults folder as .mat files, where the file name depicts the best validation error achieved. For example, file 0.32624.mat in the DeepResults folder tells the hyper-parameters at validation error 0.32624. Also, the model file `model.mat` details the weights file and other relevant information to be stored.
 
 4. Feature selection functions
     * `func_FeatureSelection`: This will find activation maps at the ReLu layer, perform Region Accumulation (RA) step and Element Decoder step to find the element/gene subset. The input is model.mat (from `func_TrainModel`) and related .mat file from the folder DeepResults. This function finds CAM for each sample and provides the union of all maps.
