@@ -89,8 +89,8 @@ curr_dir=pwd;
 FIGS_path = [curr_dir,'/FIGS/'];
 Models_path = [curr_dir,'/Models/'];
 Data_path = [curr_dir,'/Data/'];
-Parm.PATH{1} =  FIGS_path; %'~/DeepInsight3D/FIGS/'; %Store figures in this folder
-Parm.PATH{2} = Models_path; %'~/DeepInsight3D_pkg/Models/'; % Store model in this folder
+Parm.PATH{1} =  FIGS_path; %'~/MRep-DeepInsight/FIGS/'; %Store figures in this folder
+Parm.PATH{2} = Models_path; %'~/MRep-DeepInsight/Models/'; % Store model in this folder
 Parm.PATH{3} = Data_path; % store your data here
 
 if Parm.TransLearn==1
