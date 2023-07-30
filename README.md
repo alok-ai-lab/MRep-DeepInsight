@@ -156,20 +156,21 @@ In this example, tabular data with 2539 dimensions is used. It has 1178 training
     Best observed feasible point:
     InitialLearnRate       Momentum     L2Regularization
        4.9866e-05           0.80103       0.012516
+    Training model ends
     
-    Out =
+    weighted integrated accuracy: 84.73
+    weighted integrated AUC: 0.8702
+      
+    model =
       struct with fields:
       bestIdx: 1
       fileName: "0.18343.mat"
+          prob: [1x1 struct]
       valError: 0.1834
 
-    Norm-2 valError 0.1834
-    Integrated accuracy: 83.97
-    Integrated AUC: 0.8692
-
-    weighted integrated accuracy: 84.73
-    weighted integrated AUC: 0.8702
-    
+    Model Files Saved ...
+    Figures Saved in the FIGS folder...
+    End of script Example1.
     ```
 
     *Note that the above values might differ.*
