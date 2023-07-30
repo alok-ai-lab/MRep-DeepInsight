@@ -303,7 +303,7 @@ A number of parameters/variables are used to control the DeepFeature_pkg. The de
 
 11.  `Parm.ParallelNet`: if '1' then this option overrides `Parm.NetName`. The custom made net from `makeObjFcn2.m` will be used.
 
-12.  `Parm.miniBatchSize`: define miniBatchSize, default is 512.
+12.  `Parm.miniBatchSize`: define miniBatchSize, default is 1024 (for 4 parallel A100 GPUs of 40GB each).
 
 13.  `Parm.Augment`: augment samples during training progress, select '1' for yes and '0' for no.
 
