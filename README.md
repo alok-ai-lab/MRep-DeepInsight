@@ -22,7 +22,7 @@ Matlab version: 2022b;
 GPU A100 (4 parallel);
 
 # Reference 
-Sharma A*, et. al., MRep-DeepInsight, 2023 (TBA) 
+Sharma A*, et. al., Multi-representation DeepInsight: an improvement on tabular data analysis, 2023 (TBA) 
 
 ## Download and Install
 
