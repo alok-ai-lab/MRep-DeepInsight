@@ -175,9 +175,11 @@ In this example, tabular data with 2539 dimensions is used. It has 1178 training
 
     *Note that the above values might differ.*
 
-    The following training plot can be seen if the `Parm.trainingPlot` option is set to `training-progress`.
+    The following training plot (Figure 2) can be seen if the `Parm.trainingPlot` option is set to `training-progress`.
 
-    <img src="https://github.com/alok-ai-lab/Supplementary/blob/main/TrainingPlot.png?raw=true" width="900" height="450">
+    <img src="https://github.com/alok-ai-lab/Supplementary/blob/main/TrainingPlot.png?raw=true" width="900" height="450">   
+    
+    **Figure 2** Training progress plot 
 
     The objective function figure will be shown for the Bayesian Optimization Technique (BOT). By default 'no BOT' will be applied; i.e. `Parm.MaxObj=1`. However, if BOT is required then change parameter `Parm.MaxObj' to a value higher than 1. If it is set as 'Parm.MaxObj=25' then 25 objective functions will be searched for tuning hyperparameters and the best one (with the minimum validation error) will be selected.
     
