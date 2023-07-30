@@ -43,7 +43,7 @@ if Parm.MaxObj==1
     Parm.filterSize2 = 2;
     end
 end
-Parm.MaxEpochs = 50;%400;
+Parm.MaxEpochs = 400;
 Parm.MaxTime = 50; % (in hours) Max. training time in hours to run a model. 
 Parm.trainingPlot = 'training-progress'; % 'training-progress' to view training plot otherwise 'none'
 if Parm.MaxObj>1
