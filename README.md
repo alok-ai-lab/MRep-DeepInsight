@@ -370,24 +370,8 @@ A Matlab page on DeepInsight can be viewed from [here](https://www.mathworks.com
 
 ### Previous papers
 *Sharma A, Vans E, Shigemizu D, Boroevich KA, Tsunoda T, DeepInsight: A methodology to transform a non-image data to an image for convolution neural network architecture, Scientific Reports, 9(1), 1-7, 2019.*  
-*Sharma A, Lysenko A, Boroevich K, Vans E, Tsunoda T, DeepFeature: feature selection in nonimage data using convolutional neural network, Briefings in Bioinformatics, 22(6), 2021.*
-*Sharma A, Lysenko A, Boroevich K, Tsunoda T, DeepInsight-3D architecture for anti-cancer drug response prediction with deep-learning on multi-omics, Scientific Reports, 13(2483), 2023.*
+*Sharma A, Lysenko A, Boroevich K, Vans E, Tsunoda T, DeepFeature: feature selection in nonimage data using convolutional neural network, Briefings in Bioinformatics, 22(6), 2021.*  
+*Sharma A, Lysenko A, Boroevich K, Tsunoda T, DeepInsight-3D architecture for anti-cancer drug response prediction with deep-learning on multi-omics, Scientific Reports, 13(2483), 2023.*  
 
 ### GitHub weblink of DeepInsight (Python and Matlab)
 Overall weblink [here](https://alok-ai-lab.github.io/DeepInsight/)
-
-### DeepFeature Paper
-*Sharma A, Lysenko A, Boroevich KA, Vans E, Tsunoda T, DeepFeature: feature selection in nonimage data using convolutional neural network, Briefings in Bioinformatics, 22(6), 2021.*
-
-### Winning Kaggle competition by Mark Peng
-a) Competition details: Mechanisms of Actions (MoA) Predictions https://www.kaggle.com/competitions/lish-moa
-
-b) *Peng et al., 1st 1st PlaceWinning Solution– Hungry for Gold. Laboratory for Innovation Science at Harvard, Mechanisms of Action (MoA) Prediction Competition 2020.* [here](https://www.kaggle.com/c/lish-moa/discussion/201510)
-
-c) Organizers: MIT and Harvard University (Connectivity Map [here](https://clue.io/))
-
-d) DeepInsight EfficientNet-B3 Noisy Student (PyTorch) [here](https://www.kaggle.com/code/markpeng/deepinsight-efficientnet-b3-noisystudent/notebook)
-
-### Usage of DeepInsight by Subject Area
-![alt text](https://github.com/alok-ai-lab/DeepInsight3D/blob/main/Docs_by_Subject.png?raw=true)
-#### source: Scopus
