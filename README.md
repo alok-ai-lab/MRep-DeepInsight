@@ -33,9 +33,12 @@ Sharma A*, et. al., MRep-DeepInsight, 2023 (TBA)
     >> tar -xvf MRep-DeepInsight.tar
     ```
 
-    Note: Install R/Python software to use UMAP (see `umap_Rmatlab.m`)
+    **Note**:
+   1) Install R/Python software to use UMAP (see `umap_Rmatlab.m`).  
+   2) This package also uses liblinear tools. Therefore, load liblinear package and set the path correctly in Line 54, [Integrated_Test.m](https://github.com/alok-ai-lab/MRep-DeepInsight/blob/main/Integrated_Test.m).
+      Alternatively, comment out call for weighted integrated accuracy & AUC (Lines 38-75, [Integrated_Test.m](https://github.com/alok-ai-lab/MRep-DeepInsight/blob/main/Integrated_Test.m).
 
-2. Download the example dataset from the following link (caution: data size is 17MB):
+3. Download the example dataset from the following link (caution: data size is 17MB):
 
     [dataset4.mat](https://github.com/alok-ai-lab/MRep-DeepInsight/blob/main/Data/dataset4.mat)
    
@@ -43,9 +46,9 @@ Sharma A*, et. al., MRep-DeepInsight, 2023 (TBA)
 
    The dataset is given in the struct format of Matlab. Use any other data (binary class or multi-class) in a similar struct format for MRep-DeepInsight.
 
-3. Download and Install example CNN net such as ResNet-50 in Matlab, see details about ResNet-50 from MathWorks [link](https://www.mathworks.com/help/deeplearning/ref/resnet50.html). You may use different nets as desired.
+4. Download and Install example CNN net such as ResNet-50 in Matlab, see details about ResNet-50 from MathWorks [link](https://www.mathworks.com/help/deeplearning/ref/resnet50.html). You may use different nets as desired.
 
-4. Executing the MRep-DeepInsight: all the codes should be run in the folder ../MRep-DeepInsight/, if you want to run in a different folder then addpath to appropriate directories in Matlab
+5. Executing the MRep-DeepInsight: all the codes should be run in the folder ../MRep-DeepInsight/, if you want to run in a different folder then addpath to appropriate directories in Matlab
 
 ## Manifold and supplement techniques for MRep-DeepInsight
 The following mapping techniques can be used for MRep-DeepInsight
