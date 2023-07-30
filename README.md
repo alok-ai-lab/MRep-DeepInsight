@@ -266,13 +266,19 @@ A number of parameters/variables are used to control the DeepFeature_pkg. The de
 
     Default is tSNE.
 
-2. `Parm.integrate`: This will support for than one representation (which is not possible with `Parm.Method`). Various manifold techniques (with respective distances esp. for tSNE) and supplement methods can be listed here to integrate the performance of these techniques. See Line 133 in `Parameters.m` file. The usage is:
+2. `Parm.UseIntegrate`: can  be `'yes'` or `'no'`. If 'yes' then the following `Parm.integrate` variable will be used, otherwise `Parm.Method` will be used.
 
-   ```Parm.integrate = {Manifold1,Distance1,Manifold1,Distance2,...,Manifold3,Manifold4,...,Supplement1,Supplement2,Supplement3}```
+3. `Parm.integrate`: This will support for than one representation (which is not possible with `Parm.Method`). Various manifold techniques (with respective distances esp. for tSNE) and supplement methods can be listed here to integrate the performance of these techniques. See Line 133 in `Parameters.m` file. The usage is:
+
+   ```
+   Parm.integrate = {Manifold1,Distance1,Manifold1,Distance2,...
+            Manifold3,Manifold4,...,
+            Supplement1,Supplement2,Supplement3}
+   ```
 
    where Manifold1 is tSNE and Distance1...Distance11 are tSNE distances. Manifold3, Manifold4,... are other manifold techniques such as KPCA, UMAP and PCA. Supplement1, Supplement2,.. are Blur, Gabor and Assignment. All or any of these combinations can be used for `Parm.integrate` as long as more than 1 technique is selected to render multiple representation strategy.
 
-4. `Parm.Dist` (Distance selection only for tSNE)
+4. `Parm.Dist` (Distance selection only for tSNE) - This parameter is NOT used when `Parm.UseInteregrate=yes`.
 
     If tSNE is used, then one of the following distances can be used. The default distance is ‘euclidean’.
 
