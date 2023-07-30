@@ -191,13 +191,13 @@ In this example, tabular data with 2539 dimensions is used. It has 1178 training
  
 ### Note:
 
-* All the results will be stored in current stage folder
- `~/DeepInsight3D_pkg/Models/Run2/StageX`  where X is the current stage;
+* All the results will be stored in the current stage folder
+ `~/DeepInsight3D_pkg/Models/Run4/StageX`  where X is the current stage;
 
 * Similarly, all the figures will be stored in a folder
-`~/DeepInsight3D_pkg/FIGS/Run1/StageX` where X is the current stage.
+`~/DeepInsight3D_pkg/FIGS/Run4/StageX` where X is the current stage.
 
-* If the loop continues then the value of X will increment to 1, 2, 3, …; i.e., repeating DeepInsight3D model to find a smaller subset of features/genes.
+* For feature selection: If the loop continues then the value of X will increment to 1, 2, 3, …; i.e., repeating the model to find a smaller subset of features/genes.
 
 ### Bayesian Optimization vs NO Bayesian Optimization
 For hyperparameter tuning, Bayesian Optimization Technique (BOT) can be used. If `Parm.MaxObj=1` then NO BOT will be applied. If it is N>1 (i.e. greater than 1) then N objectives functions will be created and the best hyperparameters (for which the validation error is the minimum) will be selected.
@@ -214,11 +214,15 @@ For, NO BOT, use,
 
 ## Description of files and folders
 
-1. `DeepInsight3D_pkg` has 4 folders: Data, DeepResults, FIGS, and Models. It has several .m files. However, the main files are 1) `Deepinsight3D.m` to perform image conversion and CNN modeling, and 2) `func_FS_classbasedCAM.m` to perform feature selection. All the parameter settings can be done in `Parameters.m` file.
+1. `MRep-DeepInsight` has 4 folders: Data, DeepResults, FIGS, and Models. It has several .m files. However, the main file is `Deepinsight3D.m`, which performs tabular data to image conversion and CNN modelling. The codes of MRep-DeepInsight is developed on DeepInsight3D package and therefore it can perform all tasks of previously developed models such as DeepInsight, DeepFeature and DeepInsight3D. All the parameter settings can be done in the `Parameters.m` file.
 
 2. DeepInsight3D.m has 2 main functions:
 
-    * `func_Prepare_Data`: This function loads the data, splits the training data into the Train and Validation sets, normalizes all the 3 sets (including the Test set), and converts multi-layered non-image samples to 3D image form using the Training set. The Test and Validation sets are not used to find pixel locations. Once the pixel locations are obtained, all the non-image samples are converted to 3D image samples. The image datasets are stored as Out1.mat or Out2.mat depending on whether norm1 or norm2 was selected.
+    * `func_integrated`: This function supports transforms tabular data to image data using MRep-DeepInsight methodology. It loads the data, splits the training data into the Train and Validation sets, normalizes all the 3 sets (including the Test set), and converts samples to images form using the Training set. The Test and Validation sets are not used to find pixel locations. The image datasets are stored as Out1.mat or Out2.mat depending on whether norm1 or norm2 was selected.
+
+    * `Integrated_Test`: This function computes the integrated performance (as shown in Figures 1c: model analysis phase). 
+
+    * `func_Prepare_Data`: This function supports previously models (DeepFeature, DeepInsight and DeepInsight3D). It loads the data, splits the training data into the Train and Validation sets, normalizes all the 3 sets (including the Test set), and converts multi-layered non-image samples to 3D image form using the Training set. The Test and Validation sets are not used to find pixel locations. Once the pixel locations are obtained, all the non-image samples are converted to 3D image samples. The image datasets are stored as Out1.mat or Out2.mat depending on whether norm1 or norm2 was selected.
 
     * `func_TrainModel`: This function executes the convolution neural network (CNN) using many pretrained and custom nets. The user may change the net as required. The default values of hyperparameters for CNN are used. However, if `Parm.MaxObj` is greater than 1 then it optimizes hyper-parameters using the Bayesian Optimization Technique. It uses a Training set and Validation set to tune and evaluate the model hyper-parameters.
 
@@ -226,12 +230,12 @@ For, NO BOT, use,
 
         The best model (in case Parm.MaxObj>1) is stored in DeepResults folder as .mat files, where the file name depicts the best validation error achieved. For example, file 0.32624.mat in DeepResults folder tells the hyper-parameters at validation error 0.32624. Also, the model file `model.mat` details the weights file and other relevant information to be stored.
 
-3. Feature selection functions
+4. Feature selection functions
     * `func_FeatureSelection`: This will find activation maps at the ReLu layer, perform Region Accumulation (RA) step and Element Decoder step to find the element/gene subset. The input is model.mat (from `func_TrainModel`) and related .mat file from the folder DeepResults. This function finds CAM for each sample and provides the union of all maps.
     * `func_FS_class_basedCAM`: This function performs class-based CAM, i.e., each class will have a distinct CAM.
     * `func_FeatureSelection_avgCAM`: This function finds the common CAM across all the samples.
 
-4. Non-image to image conversion: two core sub-functions of `func_Prepare_Data` are used to convert samples from non-image to image. These are described below.
+5. Non-image to image conversion: two core sub-functions of `func_Prepare_Data` are used to convert samples from non-image to image. These are described below.
 
     * `Cart2Pixel`: The input to this function is the entire Training set. The output is the feature or gene locations Z in the pixel frame. The size of the pixel frame is pre-defined by the user.
 
