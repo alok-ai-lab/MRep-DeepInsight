@@ -237,7 +237,7 @@ For, NO BOT, use,
     * `func_FS_class_basedCAM`: This function performs class-based CAM, i.e., each class will have a distinct CAM.
     * `func_FeatureSelection_avgCAM`: This function finds the common CAM across all the samples.
 
-5. Non-image to image conversion: two core sub-functions of `func_Prepare_Data` are used to convert samples from non-image to image. These are described below.
+5. Non-image to image conversion: two core sub-functions of `func_Prepare_Data` and `func_integrated` are used to convert samples from non-image to image. These are described below.
 
     * `Cart2Pixel`: The input to this function is the entire Training set. The output is the feature or gene locations Z in the pixel frame. The size of the pixel frame is pre-defined by the user.
 
@@ -247,7 +247,7 @@ For, NO BOT, use,
 
 5. Extraction of Gene Names (optional): This option is useful for enrichment analysis. Two files for the extraction of genes are GeneNames_Extract.m and GeneNames.m. The list of names of genes is stored in `~/DeepInsight3D_pkg/Models/RunY/StageX/` folder.
 
-    After running the feature selection function, the results will be stored in the corresponding RunY and StageX folders (where X and Y are integers 1,2,3…). If it is required to find the gene IDs/names of the obtained subset for each cancer type, then execute `GeneNames_Extract` function. Go to Line 4, and set the `Out_Stages` variable. For e.g., if Stage 2 has been saved inside Run1 after executing `func_FS_class_basedCAM`, use `Out_Stages = 2`. Then go to Line 6 and define `FileRun`. 
+    After running the feature selection function, the results will be stored in the corresponding RunY and StageX folders (where X and Y are integers 1,2,3…). If it is required to find the gene IDs/names of the obtained subset for each cancer type, then execute `GeneNames_Extract` function. Go to Line 4, and set the `Out_Stages` variable. For e.g., if Stage 2 has been saved inside Run1 after executing `func_FS_class_basedCAM`, use `Out_Stages = 2`. Then go to Line 6 and define `FileRun`. For MRep-DeepInsight, we have not used feature selection.
 
     The gene list per class will be generated. If there are 10 cancer types, then 10 files will be generated. In addition, one file with all genes listed will be generated (e.g. GeneList_UnCmprss.txt). The results will be stored in `~/Models/RunY/StageX` as RunYStageX.tar.gz and a folder with the same results will also be created as RunYStageX. In this example, it will be stored in the folder `Run1Stage2` and Run1Stage2.tar.gz.
 
@@ -266,85 +266,91 @@ A number of parameters/variables are used to control the DeepFeature_pkg. The de
 
     Default is tSNE.
 
-2. `Parm.Dist` (Distance selection only for tSNE)
+2. `Parm.integrate`: This will support for than one representation (which is not possible with `Parm.Method`). Various manifold techniques (with respective distances esp. for tSNE) and supplement methods can be listed here to integrate the performance of these techniques. See Line 133 in `Parameters.m` file. The usage is:
+
+   ```Parm.integrate = {Manifold1,Distance1,Manifold1,Distance2,...,Manifold3,Manifold4,...,Supplement1,Supplement2,Supplement3}```
+
+   where Manifold1 is tSNE and Distance1...Distance11 are tSNE distances. Manifold3, Manifold4,... are other manifold techniques such as KPCA, UMAP and PCA. Supplement1, Supplement2,.. are Blur, Gabor and Assignment. All or any of these combinations can be used for `Parm.integrate` as long as more than 1 technique is selected to render multiple representation strategy.
+
+4. `Parm.Dist` (Distance selection only for tSNE)
 
     If tSNE is used, then one of the following distances can be used. The default distance is ‘euclidean’.
 
     Parm.Dist = ‘cosine’, ‘hamming’, ‘mahalanobis’, ‘educidean’, ‘chebychev’, ‘correlation’, ‘minkowski’, ‘jaccard’, or ‘seuclidean’ (standardized Eucliden distance).
 
-3. `Parm.Max_Px_Size` (maximum pixel frame either row or column)
+5. `Parm.Max_Px_Size` (maximum pixel frame either row or column)
 
     The default value is 224 as required by ResNet-50 architecture.
 
-4. `Parm.ValidRatio` (ratio of validation data and training data)
+6. `Parm.ValidRatio` (ratio of validation data and training data)
 
     The amount of training data required to be used as a validation set. Default is 0.1; i.e., 10% of training data is kept aside as a validation set. The new training set will be 90% of the original size.
 
-5. `Parm.Seed`
+7. `Parm.Seed`
 
     Random parameter seed to split the data.
 
-6.  `Parm.NetName`: use pre-trained nets such as `resnet50`, `inceptionresnetv2`, `nasnetlarge`, `efficientnetb0`, `googlenet` and so on. See a list of pre-trained nets from Matlab link [here](https://www.mathworks.com/help/deeplearning/ug/pretrained-convolutional-neural-networks.html)
+8.  `Parm.NetName`: use pre-trained nets such as `resnet50`, `inceptionresnetv2`, `nasnetlarge`, `efficientnetb0`, `googlenet` and so on. See a list of pre-trained nets from Matlab link [here](https://www.mathworks.com/help/deeplearning/ug/pretrained-convolutional-neural-networks.html)
 
-7.  `Parm.ExecutionEnvironment`: execution environment based on your hardware. Options are `cpu`, `gpu`, `multi-gpu`, `parallel`, and `auto`. Please check trainingOptions (Matlab) for further details.
+9.  `Parm.ExecutionEnvironment`: execution environment based on your hardware. Options are `cpu`, `gpu`, `multi-gpu`, `parallel`, and `auto`. Please check trainingOptions (Matlab) for further details.
 
-8.  `Parm.ParallelNet`: if '1' then this option overrides `Parm.NetName`. The custom made net from `makeObjFcn2.m` will be used.
+10.  `Parm.ParallelNet`: if '1' then this option overrides `Parm.NetName`. The custom made net from `makeObjFcn2.m` will be used.
 
-9.  `Parm.miniBatchSize`: define miniBatchSize, default is 512.
+11.  `Parm.miniBatchSize`: define miniBatchSize, default is 512.
 
-10.  `Parm.Augment`: augment samples during training progress, select '1' for yes and '0' for no.
+12.  `Parm.Augment`: augment samples during training progress, select '1' for yes and '0' for no.
 
-11.  `Parm.AugMeth`: select method '1' or '2'. Method 1 automatically augments samples whereas Method 2 is done by the user
+13.  `Parm.AugMeth`: select method '1' or '2'. Method 1 automatically augments samples whereas Method 2 is done by the user
 
-12.  `Parm.aug_tr`: if `Parm.AugMeth=2` then `Parm.aug_tr=500` will augment 500 samples of training set if the number of samples in a class is less than 500.
+14.  `Parm.aug_tr`: if `Parm.AugMeth=2` then `Parm.aug_tr=500` will augment 500 samples of training set if the number of samples in a class is less than 500.
 
-13.  `Parm.aug_val`: if `Parm.Aug=2` then `Parm.aug_val=50` will augment 50 samples of validation set if the number of samples in a class is less than 50.
+15.  `Parm.aug_val`: if `Parm.Aug=2` then `Parm.aug_val=50` will augment 50 samples of validation set if the number of samples in a class is less than 50.
 
-14.  `Parm.ApplyFS`: if '1' it applies a feature selection process using Logistic Regression before applying DeepInsight transformation.
+16.  `Parm.ApplyFS`: if '1' it applies a feature selection process using Logistic Regression before applying DeepInsight transformation.
 
-15.  `Parm.FeatureMap`: has following options. `0` means use 'all' omics or multi-layered data for conversion.
+17.  `Parm.FeatureMap`: has following options. `0` means use 'all' omics or multi-layered data for conversion.
                             '1' means use the 1st layer for conversion (e.g. expression)
                             '2' means use the 2nd layer for conversion (e.g. methylation)
                             '3' means use the 3rd layer for conversion (e.g. mutation)
                             
-16.  `Parm.TransLearn`: if '1' then learn CNN from previously trained nets on your different datasets.
+18.  `Parm.TransLearn`: if '1' then learn CNN from previously trained nets on your different datasets.
 
-17. `Parm.FileRun`
+19. `Parm.FileRun`
 
     Change the name as RunX, where X is an integer defining the run of DeepFeature on your data.
 
     Change the value X for new runs.
 
-18. `Parm.SnowFall` (compression algorithm)
+20. `Parm.SnowFall` (compression algorithm)
 
     Suppose SnowFall compression algorithm is used then set the value as 1, otherwise 0. Default is set as 1.
 
-19. `Parm.Threshold` (for Class Activation Maps)
+21. `Parm.Threshold` (for Class Activation Maps)
 
     Set the threshold of class activation maps (CAMs) by changing the value between 0 and 1. If the value is high (towards 1), then the region of activation maps will be very fine. On the other hand, the region will be broader towards value 0. Default is 0.3. 
 
-20. `Parm.DesiredGenes`
+22. `Parm.DesiredGenes`
 
     Expected number of genes to be selected. Default is set as 1200. However, change as required.
 
-21. `Parm.UsePrevModel`
+23. `Parm.UsePrevModel`
 
     The iterative way runs in multiple stages. If you want to avoid running CNN multiple times then set these values as ‘y’ (yes); i.e., the previous weights of CNN will be used for the current model. This way, the processing time is shorter, however, performance (in terms of selection and accuracy) would be lower. The default setting is ‘n’ (no).
 
-22. `Parm.SaveModels`
+24. `Parm.SaveModels`
 
     For saving models type ‘y’, otherwise ‘n’. Default is set as yes ‘y’.
 
-23. `Parm.Stage`
+25. `Parm.Stage`
 
     Define the stage of execution. The default value is set as `Parm.Stage=1`. All the results will be saved in RunXStage1. If iterative process is executed then results will be stored in Stage2, Stage3… and so on.
 
 
-24. `Parm.PATH`
+26. `Parm.PATH`
 
     Default paths for FIGS, Models and Data are `~/DeepInsight3D_pkg/FIGS/`, `~/DeepInsight3D_pkg/Models/` and `~/DeepInsight3D/Data/`, respectively. Runtime parameters will be stored in `~/DeepInsight3D_pkg/` folder (such as model.mat, Out1.mat or Out2.mat).
 
-25. Log and performance file (including an overview of parameter information)
+27. Log and performance file (including an overview of parameter information)
 
     The runtime results will be stored in `~/DeepFeature/DeepInsight3D_Results.txt` with complete information about the run.
 
