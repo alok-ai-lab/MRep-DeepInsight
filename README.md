@@ -355,11 +355,11 @@ A number of parameters/variables are used to control the DeepFeature_pkg. The de
 
 26. `Parm.PATH`
 
-    Default paths for FIGS, Models and Data are `~/DeepInsight3D_pkg/FIGS/`, `~/DeepInsight3D_pkg/Models/` and `~/DeepInsight3D/Data/`, respectively. Runtime parameters will be stored in `~/DeepInsight3D_pkg/` folder (such as model.mat, Out1.mat or Out2.mat).
+    Default paths for FIGS, Models and Data are `~/MRep-DeepInsight/FIGS/`, `~/MRep-DeepInsight/Models/` and `~/MRep-DeepInsight/Data/`, respectively. Runtime parameters will be stored in `~/MRep-DeepInsight/` folder (such as model.mat, Out1.mat or Out2.mat).
 
 27. Log and performance file (including an overview of parameter information)
 
-    The runtime results will be stored in `~/DeepFeature/DeepInsight3D_Results.txt` with complete information about the run.
+    The runtime results will be stored in `~/MRep-DeepInsight/DeepInsight3D_Results.txt` with complete information about the run.
 
 ## Related materials
 
@@ -368,8 +368,10 @@ A number of parameters/variables are used to control the DeepFeature_pkg. The de
 A YouTube video about the original DeepInsight method is available [here](https://www.youtube.com/watch?v=411iwaptk24&feature=youtu.be).
 A Matlab page on DeepInsight can be viewed from [here](https://www.mathworks.com/company/user_stories/case-studies/riken-develops-a-method-to-apply-cnn-to-non-image-data.html).
 
-### DeepInsight Paper
-*Sharma A, Vans E, Shigemizu D, Boroevich KA, Tsunoda T, DeepInsight: A methodology to transform a non-image data to an image for convolution neural network architecture, Scientifi Reports, 9(1), 1-7, 2019.*
+### Previous papers
+*Sharma A, Vans E, Shigemizu D, Boroevich KA, Tsunoda T, DeepInsight: A methodology to transform a non-image data to an image for convolution neural network architecture, Scientific Reports, 9(1), 1-7, 2019.*  
+*Sharma A, Lysenko A, Boroevich K, Vans E, Tsunoda T, DeepFeature: feature selection in nonimage data using convolutional neural network, Briefings in Bioinformatics, 22(6), 2021.*
+*Sharma A, Lysenko A, Boroevich K, Tsunoda T, DeepInsight-3D architecture for anti-cancer drug response prediction with deep-learning on multi-omics, Scientific Reports, 13(2483), 2023.*
 
 ### GitHub weblink of DeepInsight (Python and Matlab)
 Overall weblink [here](https://alok-ai-lab.github.io/DeepInsight/)
