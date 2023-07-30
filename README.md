@@ -141,16 +141,32 @@ In this example, tabular data with 2539 dimensions is used. It has 1178 training
     Integrated conversion finished and saved as Out1.mat or Out2.mat!
     Training model begins: Net1
     ...
+    |Iter | Eval result | Objective | ...
+    |1    |  Best       |  0.18345  | ...
+    ....
+    Optimization completed
+    MaxObjectiveEvaluations of 1 reached.
+    Total function evaluations: 1
+    Total elapsed time: 1785.2313 seconds
+    Total objective function evaluation time: 1784.7876
+
+    Best observed feasible point:
+    InitialLearnRate       Momentum     L2Regularization
+       4.9866e-05           0.80103       0.012516
+    
     Out =
       struct with fields:
       bestIdx: 1
-      fileName: "0.32624.mat"
-      valError: 0.3262
-      
-    Stage: 1; Test Accuracy: 0.6744; ValErr: 0.3262;
-    Momentum: 0.801033; L2Regularization: 0.0125157; InitLearnRate: 4.9866e-05
+      fileName: "0.18343.mat"
+      valError: 0.1834
+
+    Norm-2 valError 0.1834
+    Integrated accuracy: 83.97
+    Integrated AUC: 0.8692
+
+    weighted integrated accuracy: 84.73
+    weighted integrated AUC: 0.8702
     
-    Training model ends
     ```
 
     *Note that the above values might differ.*
