@@ -105,7 +105,7 @@ In this example, tabular data with 2539 dimensions is used. It has 1178 training
 3. Depending upon how many representations are required, setup `Parm.integrate` in the `Parameters.m` file.
    For e.g. define `Parm.integrate={'tsne','hamming','tsne','euclidean'}`, i.e., two representations (m=2).
 
-4. For a quick test of codes, use 1 objective function; i.e., `Parm.MaxObj=1`. The recommended value is 25 or over.
+4. For a quick test of codes, use 1 objective function; i.e., `Parm.MaxObj=1`, and a small value for `Parm.MaxEpochs`. The recommended MaxObj value is 25 or over, and for MaxEpochs is over 50.
 
 5. Set up other parameters as required by changing the `Parameters.m` file, otherwise leave all as default.
    However, based on your hardware requirements, change `Parm.miniBatchSize` to lower value if encountering memory problems (we use the default value as 1024) and also `Parm.ExecutionEnvironment` (default is multi-gpu). If you don't want to see the training progress plot produced by CNN training, then set `Parm.trainingPlot=none`. 
