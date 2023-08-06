@@ -372,6 +372,7 @@ A Matlab page on DeepInsight can be viewed from [here](https://www.mathworks.com
 *Sharma A, Vans E, Shigemizu D, Boroevich KA, Tsunoda T, DeepInsight: A methodology to transform a non-image data to an image for convolution neural network architecture, Scientific Reports, 9(1), 1-7, 2019.*  
 *Sharma A, Lysenko A, Boroevich K, Vans E, Tsunoda T, DeepFeature: feature selection in nonimage data using convolutional neural network, Briefings in Bioinformatics, 22(6), 2021.*  
 *Sharma A, Lysenko A, Boroevich K, Tsunoda T, DeepInsight-3D architecture for anti-cancer drug response prediction with deep-learning on multi-omics, Scientific Reports, 13(2483), 2023.*  
+*Jia S, Lysenko A, Boroevich K, Sharma A, Tsunoda T, scDeepInsight: a supervised cell-type identification method for scRNA-seq data with deep learning, Briefings in Bioinformatics, 2023. https://doi.org/10.1093/bib/bbad266*
 
 ### GitHub weblink of DeepInsight (Python and Matlab)
 Overall weblink [here](https://alok-ai-lab.github.io/DeepInsight/)
