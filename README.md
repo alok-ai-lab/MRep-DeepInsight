@@ -22,7 +22,7 @@ Matlab version: 2022b;
 GPU A100 (4 parallel);
 
 # Reference 
-Sharma A*, et. al., Multi-representation DeepInsight: an improvement on tabular data analysis, 2023 [Paper Link](https://www.biorxiv.org/content/10.1101/2023.08.02.551620v1) 
+Sharma A*, et. al., Multi-representation DeepInsight: an improvement on tabular data analysis, 2023 [Paper link](https://www.biorxiv.org/content/10.1101/2023.08.02.551620v1) 
 
 ## Download and Install
 
